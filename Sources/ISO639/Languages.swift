@@ -35,7 +35,8 @@ class Languages {
                     alpha2: .afr,
                     alpha2T: "afr",
                     alpha2B: "afr",
-                    alpha3: "afr"
+                    alpha3: "afr",
+                    alphabet: .afrikaans
                 ),
                 LanguageInfo(
                     name: "Akan",
@@ -341,7 +342,8 @@ class Languages {
                     alpha2: .dan,
                     alpha2T: "dan",
                     alpha2B: "dan",
-                    alpha3: "dan"
+                    alpha3: "dan",
+                    alphabet: .danish
                 ),
                 LanguageInfo(
                     name: "Divehi",
@@ -359,7 +361,8 @@ class Languages {
                     alpha2: .nld,
                     alpha2T: "nld",
                     alpha2B: "dut",
-                    alpha3: "nld"
+                    alpha3: "nld",
+                    alphabet: .dutch
                 ),
                 LanguageInfo(
                     name: "Dzongkha",
@@ -377,7 +380,8 @@ class Languages {
                     alpha2: .eng,
                     alpha2T: "eng",
                     alpha2B: "eng",
-                    alpha3: "eng"
+                    alpha3: "eng",
+                    alphabet: .latin
                 ),
                 LanguageInfo(
                     name: "Esperanto",
@@ -395,7 +399,8 @@ class Languages {
                     alpha2: .est,
                     alpha2T: "est",
                     alpha2B: "est",
-                    alpha3: "est"
+                    alpha3: "est",
+                    alphabet: .estonian
                 ),
                 LanguageInfo(
                     name: "Ewe",
@@ -431,7 +436,8 @@ class Languages {
                     alpha2: .fin,
                     alpha2T: "fin",
                     alpha2B: "fin",
-                    alpha3: "fin"
+                    alpha3: "fin",
+                    alphabet: .finnish
                 ),
                 LanguageInfo(
                     name: "French",
@@ -476,7 +482,8 @@ class Languages {
                     alpha2: .deu,
                     alpha2T: "deu",
                     alpha2B: "ger",
-                    alpha3: "deu"
+                    alpha3: "deu",
+                    alphabet: .german
                 ),
                 LanguageInfo(
                     name: "Greek",
@@ -584,7 +591,8 @@ class Languages {
                     alpha2: .ind,
                     alpha2T: "ind",
                     alpha2B: "ind",
-                    alpha3: "ind"
+                    alpha3: "ind",
+                    alphabet: .latin
                 ),
                 LanguageInfo(
                     name: "Interlingue",
@@ -809,7 +817,8 @@ class Languages {
                     alpha2: .lat,
                     alpha2T: "lat",
                     alpha2B: "lat",
-                    alpha3: "lat"
+                    alpha3: "lat",
+                    alphabet: .latin
                 ),
                 LanguageInfo(
                     name: "Luxembourgish",
@@ -917,7 +926,8 @@ class Languages {
                     alpha2: .msa,
                     alpha2T: "msa",
                     alpha2B: "may",
-                    alpha3: "msa"
+                    alpha3: "msa",
+                    alphabet: .latin
                 ),
                 LanguageInfo(
                     name: "Malayalam",
@@ -1025,7 +1035,8 @@ class Languages {
                     alpha2: .nob,
                     alpha2T: "nob",
                     alpha2B: "nob",
-                    alpha3: "nob"
+                    alpha3: "nob",
+                    alphabet: .norwegian
                 ),
                 LanguageInfo(
                     name: "Norwegian Nynorsk",
@@ -1367,7 +1378,8 @@ class Languages {
                     alpha2: .swa,
                     alpha2T: "swa",
                     alpha2B: "swa",
-                    alpha3: "swa"
+                    alpha3: "swa",
+                    alphabet: .latin
                 ),
                 LanguageInfo(
                     name: "Swati",
@@ -1385,7 +1397,8 @@ class Languages {
                     alpha2: .swe,
                     alpha2T: "swe",
                     alpha2B: "swe",
-                    alpha3: "swe"
+                    alpha3: "swe",
+                    alphabet: .swedish
                 ),
                 LanguageInfo(
                     name: "Tamil",
@@ -1619,7 +1632,8 @@ class Languages {
                     alpha2: .fry,
                     alpha2T: "fry",
                     alpha2B: "fry",
-                    alpha3: "fry"
+                    alpha3: "fry",
+                    alphabet: .westFrisian
                 ),
                 LanguageInfo(
                     name: "Xhosa",
@@ -1664,7 +1678,8 @@ class Languages {
                     alpha2: .zul,
                     alpha2T: "zul",
                     alpha2B: "zul",
-                    alpha3: "zul"
+                    alpha3: "zul",
+                    alphabet: .latin
                 )
             ]
         }

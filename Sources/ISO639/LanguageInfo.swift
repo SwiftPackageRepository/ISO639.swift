@@ -13,4 +13,6 @@ struct LanguageInfo {
     var alpha2T: String
     var alpha2B: String
     var alpha3: String
+    var flag: String?
+    var alphabet: Alphabet?
 }
