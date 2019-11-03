@@ -5,7 +5,7 @@
 //  Created by smuellner on 02.11.19.
 //
 
-struct LanguageInfo {
+public struct LanguageInfo {
     var name: String // language name in english
     var official: String // official language name
     var alpha1: ISO639Alpha1

@@ -6,7 +6,7 @@
 //
 import Foundation
 
-class Languages {
+public class Languages {
     var all: [LanguageInfo] {
         get {
             return [
