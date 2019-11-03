@@ -4,21 +4,34 @@
 //
 //  Created by smuellner on 02.11.19.
 //
-
-import Foundation
-
-enum Alphabet {
+enum Alphabet: CaseIterable {
     case latin
     case dutch
     case afrikaans
     case westFrisian
     case danish
     case norwegian
-    // single diacritics, mostly umlauts
+    case spanish
+    case italian
+    case guarani
+    // Single diacritics, mostly umlauts
     case finnish
     case swedish
     case estonian
     case german
+    // Circumflexes
+    case kurdish
+    case romanian
+    case welsh
+    case esperanto
+    // Three or more types of diacritics
+    case turkish
+    case icelandic
+    case hungarian
+    case catalan
+    case french
+    case occitan
+    case portuguese
     
     var characters: String {
         switch self {
@@ -34,6 +47,12 @@ enum Alphabet {
                 return "ÆØÅæøå\(Alphabet.latin.characters)"
             case .norwegian:
                 return "ÆØÅæøå\(Alphabet.latin.characters)"
+            case .spanish:
+                return "ÁÉÍÑÓÚÜáéíñóúü¡¿\(Alphabet.latin.characters)"
+            case .italian:
+                return "ÀÉÈÌÒÙàéèìòù\(Alphabet.latin.characters)"
+            case .guarani:
+                return "ÁÉÍÓÚÝÃẼĨÕŨỸÑG̃áéíóúýãẽĩõũỹñg̃\(Alphabet.latin.characters)"
             case .finnish:
                 return "ÄÖäöÅåŠšŽž\(Alphabet.latin.characters)"
             case .swedish:
@@ -42,6 +61,28 @@ enum Alphabet {
                 return "ÄÖÕÜäöõü\(Alphabet.latin.characters)"
             case .german:
                 return "ÄÖÜäöüß\(Alphabet.latin.characters)"
+            case .kurdish:
+                return "ÇÊÎŞÛçêîşû\(Alphabet.latin.characters)"
+            case .romanian:
+                return "ĂÎÂŞŢăîâşţ\(Alphabet.latin.characters)"
+            case .welsh:
+                return "ÂÊÎÔÛŴŶÁÉÍÏâêîôûŵŷáéíïÓÚẂÝÀÈÌÒÙẀỲÄËÖÜẄŸóúẃýàèìòùẁỳäëöüẅÿ \(Alphabet.latin.characters)"
+            case .esperanto:
+                return "ĈĜĤĴŜŬĉĝĥĵŝŭ\(Alphabet.latin.characters)"
+            case .turkish:
+                return "ÇĞİÖŞÜğçıöşü\(Alphabet.latin.characters)"
+            case .icelandic:
+                return "ÁÐÉÍÓÚÝÞÆÖáðéíóúýþæö\(Alphabet.latin.characters)"
+            case .hungarian:
+                return "ÁÉÍÓÖŐÚÜŰáéíóöőúüű\(Alphabet.latin.characters)"
+            case .catalan:
+                return "ÀÇÉÈÍÓÒÚÜÏàçéèíóòúüï\(Alphabet.latin.characters)"
+            case .french:
+                return "ÀÂÇÉÈÊËÎÏÔŒÙÛÜŸàâçéèêëîïôœùûüÿ\(Alphabet.latin.characters)"
+            case .occitan:
+                return "ÁÀÇÉÈÍÓÒÚËÜÏáàçéèíóòúëüï·\(Alphabet.latin.characters)"
+            case .portuguese:
+                return "ÁÉÍÓÚÂÊÔÀãõçáéíóúâêôà\(Alphabet.latin.characters)"
         }
     }
 }

@@ -243,7 +243,8 @@ class Languages {
                     alpha2: .cat,
                     alpha2T: "cat",
                     alpha2B: "cat",
-                    alpha3: "cat"
+                    alpha3: "cat",
+                    alphabet: .catalan
                 ),
                 LanguageInfo(
                     name: "Chamorro",
@@ -390,7 +391,8 @@ class Languages {
                     alpha2: .epo,
                     alpha2T: "epo",
                     alpha2B: "epo",
-                    alpha3: "epo"
+                    alpha3: "epo",
+                    alphabet: .esperanto
                 ),
                 LanguageInfo(
                     name: "Estonian",
@@ -446,7 +448,8 @@ class Languages {
                     alpha2: .fra,
                     alpha2T: "fra",
                     alpha2B: "fre",
-                    alpha3: "fra"
+                    alpha3: "fra",
+                    alphabet: .french
                 ),
                 LanguageInfo(
                     name: "Fula",
@@ -501,7 +504,8 @@ class Languages {
                     alpha2: .grn,
                     alpha2T: "grn",
                     alpha2B: "grn",
-                    alpha3: "grn"
+                    alpha3: "grn",
+                    alphabet: .guarani
                 ),
                 LanguageInfo(
                     name: "Gujarati",
@@ -573,7 +577,8 @@ class Languages {
                     alpha2: .hun,
                     alpha2T: "hun",
                     alpha2B: "hun",
-                    alpha3: "hun"
+                    alpha3: "hun",
+                    alphabet: .hungarian
                 ),
                 LanguageInfo(
                     name: "Interlingua",
@@ -646,7 +651,8 @@ class Languages {
                     alpha2: .isl,
                     alpha2T: "isl",
                     alpha2B: "ice",
-                    alpha3: "isl"
+                    alpha3: "isl",
+                    alphabet: .icelandic
                 ),
                 LanguageInfo(
                     name: "Italian",
@@ -655,7 +661,8 @@ class Languages {
                     alpha2: .ita,
                     alpha2T: "ita",
                     alpha2B: "ita",
-                    alpha3: "ita"
+                    alpha3: "ita",
+                    alphabet: .italian
                 ),
                 LanguageInfo(
                     name: "Inuktitut",
@@ -799,7 +806,8 @@ class Languages {
                     alpha2: .kur,
                     alpha2T: "kur",
                     alpha2B: "kur",
-                    alpha3: "kur"
+                    alpha3: "kur",
+                    alphabet: .kurdish
                 ),
                 LanguageInfo(
                     name: "Kwanyama",
@@ -1081,7 +1089,8 @@ class Languages {
                     alpha2: .oci,
                     alpha2T: "oci",
                     alpha2B: "oci",
-                    alpha3: "oci"
+                    alpha3: "oci",
+                    alphabet: .occitan
                 ),
                 LanguageInfo(
                     name: "Ojibwe",
@@ -1180,7 +1189,8 @@ class Languages {
                     alpha2: .por,
                     alpha2T: "por",
                     alpha2B: "por",
-                    alpha3: "por"
+                    alpha3: "por",
+                    alphabet: .portuguese
                 ),
                 LanguageInfo(
                     name: "Quechua",
@@ -1216,7 +1226,8 @@ class Languages {
                     alpha2: .ron,
                     alpha2T: "ron",
                     alpha2B: "rum",
-                    alpha3: "ron"
+                    alpha3: "ron",
+                    alphabet: .romanian
                 ),
                 LanguageInfo(
                     name: "Russian",
@@ -1360,7 +1371,8 @@ class Languages {
                     alpha2: .spa,
                     alpha2T: "spa",
                     alpha2B: "spa",
-                    alpha3: "spa"
+                    alpha3: "spa",
+                    alphabet: .spanish
                 ),
                 LanguageInfo(
                     name: "Sundanese",
@@ -1461,7 +1473,8 @@ class Languages {
                     alpha2: .tuk,
                     alpha2T: "tuk",
                     alpha2B: "tuk",
-                    alpha3: "tuk"
+                    alpha3: "tuk",
+                    alphabet: .turkish
                 ),
                 LanguageInfo(
                     name: "Tagalog",
@@ -1614,7 +1627,8 @@ class Languages {
                     alpha2: .cym,
                     alpha2T: "cym",
                     alpha2B: "wel",
-                    alpha3: "cym"
+                    alpha3: "cym",
+                    alphabet: .welsh
                 ),
                 LanguageInfo(
                     name: "Wolof",
