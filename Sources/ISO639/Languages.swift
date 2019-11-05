@@ -207,7 +207,8 @@ public class Languages {
                     alpha2: .bos,
                     alpha2T: "bos",
                     alpha2B: "bos",
-                    alpha3: "bos"
+                    alpha3: "bos",
+                    alphabet: .bosnian
                 ),
                 LanguageInfo(
                     name: "Breton",
@@ -325,7 +326,8 @@ public class Languages {
                     alpha2: .hrv,
                     alpha2T: "hrv",
                     alpha2B: "hrv",
-                    alpha3: "hrv"
+                    alpha3: "hrv",
+                    alphabet: .croatian
                 ),
                 LanguageInfo(
                     name: "Czech",
@@ -334,7 +336,8 @@ public class Languages {
                     alpha2: .ces,
                     alpha2T: "ces",
                     alpha2B: "cze",
-                    alpha3: "ces"
+                    alpha3: "ces",
+                    alphabet: .czech
                 ),
                 LanguageInfo(
                     name: "Danish",
@@ -880,7 +883,8 @@ public class Languages {
                     alpha2: .lit,
                     alpha2T: "lit",
                     alpha2B: "lit",
-                    alpha3: "lit"
+                    alpha3: "lit",
+                    alphabet: .lithuanian
                 ),
                 LanguageInfo(
                     name: "Luba-Katanga",
@@ -1007,7 +1011,8 @@ public class Languages {
                     alpha2: .nav,
                     alpha2T: "nav",
                     alpha2B: "nav",
-                    alpha3: "nav"
+                    alpha3: "nav",
+                    alphabet: .navajo
                 ),
                 LanguageInfo(
                     name: "Northern Ndebele",
@@ -1171,7 +1176,8 @@ public class Languages {
                     alpha2: .pol,
                     alpha2T: "pol",
                     alpha2B: "pol",
-                    alpha3: "pol"
+                    alpha3: "pol",
+                    alphabet: .polish
                 ),
                 LanguageInfo(
                     name: "Pashto",
@@ -1299,7 +1305,8 @@ public class Languages {
                     alpha2: .srp,
                     alpha2T: "srp",
                     alpha2B: "srp",
-                    alpha3: "srp"
+                    alpha3: "srp",
+                    alphabet: .serbian
                 ),
                 LanguageInfo(
                     name: "Gaelic",
@@ -1344,7 +1351,8 @@ public class Languages {
                     alpha2: .slv,
                     alpha2T: "slv",
                     alpha2B: "slv",
-                    alpha3: "slv"
+                    alpha3: "slv",
+                    alphabet: .slovene
                 ),
                 LanguageInfo(
                     name: "Somali",
@@ -1600,7 +1608,8 @@ public class Languages {
                     alpha2: .vie,
                     alpha2T: "vie",
                     alpha2B: "vie",
-                    alpha3: "vie"
+                    alpha3: "vie",
+                    alphabet: .vietnamese
                 ),
                 LanguageInfo(
                     name: "Volapük",

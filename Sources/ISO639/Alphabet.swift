@@ -32,7 +32,30 @@ public enum Alphabet: CaseIterable {
     case french
     case occitan
     case portuguese
-    
+    // Southern Athabaskan languages
+    case southernAthabaskan
+    case westernApache
+    case navajo
+    case mescaleroChiricahua
+    // Lechitic languages
+    case lechitic
+    case polish
+    case silesian
+    case kashubian
+    // Slavic languages
+    case slavic
+    case slovene
+    case bosnian
+    case croatian
+    case serbian
+    case czech
+    case slovak
+    case latvian
+    case lithuanian
+    // Vietnamese languages
+    case vietnamese
+    case middleVietnamese
+
     var characters: String {
         switch self {
             case .latin:
@@ -83,6 +106,44 @@ public enum Alphabet: CaseIterable {
                 return "ÁÀÇÉÈÍÓÒÚËÜÏáàçéèíóòúëüï·\(Alphabet.latin.characters)"
             case .portuguese:
                 return "ÁÉÍÓÚÂÊÔÀãõçáéíóúâêôà\(Alphabet.latin.characters)"
+            case .southernAthabaskan:
+                return "ÁĄĄ́ÉĘĘ́ÍĮĮ́ŁŃáąą́éęę́íįį́łń\(Alphabet.latin.characters)"
+            case .westernApache:
+                return "’ÓǪǪ́āą̄ēę̄īį̄óōǫǫ́ǭúū\(Alphabet.southernAthabaskan.characters)"
+            case .navajo:
+                return "'ÓǪǪ́óǫǫ́\(Alphabet.southernAthabaskan.characters)"
+            case .mescaleroChiricahua:
+                return "’ÚŲŲ́úųų́\(Alphabet.southernAthabaskan.characters)"
+            case .lechitic:
+                return "’ąłńóż\(Alphabet.latin.characters)"
+            case .polish:
+                return "ćęśź\(Alphabet.latin.characters)"
+            case .silesian:
+                return "ćśůź\(Alphabet.latin.characters)"
+            case .kashubian:
+                return "ãéëòôù\(Alphabet.latin.characters)"
+            case .slavic:
+                return "ČŠŽ\(Alphabet.latin.characters)"
+            case .slovene:
+                return "\(Alphabet.slavic.characters)"
+            case .bosnian:
+                return "ĆĐ\(Alphabet.slavic.characters)"
+            case .croatian:
+                return "ĆĐ\(Alphabet.slavic.characters)"
+            case .serbian:
+                return "ĆĐ\(Alphabet.slavic.characters)"
+            case .czech:
+                return "ÁĎÉĚŇÓŘŤÚŮÝáďéěňóřťúůý\(Alphabet.slavic.characters)"
+            case .slovak:
+                return "ÁÄĎÉÍĽĹŇÓÔŔŤÚÝáäďéíľĺňóôŕťúý\(Alphabet.slavic.characters)"
+            case .latvian:
+                return "ĀĒĢĪĶĻŅŌŖŪāēģīķļņōŗū\(Alphabet.slavic.characters)"
+            case .lithuanian:
+                return "ĄĘĖĮŲŪąęėįųū\(Alphabet.slavic.characters)"
+            case .vietnamese:
+                return "ĐÀẢÃÁẠĂẰẲẴẮẶÂẦẨẪẤẬÈẺẼÉẸÊỀỂỄẾỆÌỈĨÍỊÒỎÕÓỌÔỒỔỖỐỘƠỜỞỠỚỢÙỦŨÚỤƯỪỬỮỨỰỲỶỸÝỴđàảãáạăằẳẵắặâầẩẫấậèẻẽéẹêềểễếệìỉĩíịòỏõóọồổỗốơờởỡớợùủũúụưừửữứựỳỷỹýỵ \(Alphabet.latin.characters)"
+            case .middleVietnamese:
+                return "ĄĘĖĮŲŪąęėįųū\(Alphabet.vietnamese.characters)"
         }
     }
 }
