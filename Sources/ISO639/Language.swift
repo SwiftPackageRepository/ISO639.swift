@@ -1,16 +1,30 @@
 //
-//  Languages.swift
+//  Language.swift
 //
 //
 //  Created by smuellner on 02.11.19.
 //
-import Foundation
 
-public class Languages {
-    var all: [LanguageInfo] {
+// MARK: Language
+
+public struct Language {
+    var name: String // language name in english
+    var official: String // official language name
+    var alpha1: ISO639Alpha1
+    var alpha2: ISO639Alpha2
+    var alpha2T: String
+    var alpha2B: String
+    var alpha3: String
+    var alphabet: Alphabet?
+}
+
+// MARK: ISO639 Official Languages
+
+public extension Language {
+    static var all: [Language] {
         get {
             return [
-                LanguageInfo(
+                Language(
                     name: "Abkhaz",
                     official: "аҧсуа бызшәа",
                     alpha1: .ab,
@@ -19,7 +33,7 @@ public class Languages {
                     alpha2B: "abk",
                     alpha3: "abk"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Afar",
                     official: "Afaraf",
                     alpha1: .aa,
@@ -28,7 +42,7 @@ public class Languages {
                     alpha2B: "aar",
                     alpha3: "aar"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Afrikaans",
                     official: "Afrikaans",
                     alpha1: .af,
@@ -38,7 +52,7 @@ public class Languages {
                     alpha3: "afr",
                     alphabet: .afrikaans
                 ),
-                LanguageInfo(
+                Language(
                     name: "Akan",
                     official: "Akan",
                     alpha1: .ak,
@@ -47,7 +61,7 @@ public class Languages {
                     alpha2B: "aka",
                     alpha3: "aka"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Albanian",
                     official: "Shqip",
                     alpha1: .sq,
@@ -56,7 +70,7 @@ public class Languages {
                     alpha2B: "alb",
                     alpha3: "sqi"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Amharic",
                     official: "አማርኛ",
                     alpha1: .am,
@@ -65,7 +79,7 @@ public class Languages {
                     alpha2B: "amh",
                     alpha3: "amh"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Arabic",
                     official: "العربية",
                     alpha1: .ar,
@@ -74,7 +88,7 @@ public class Languages {
                     alpha2B: "ara",
                     alpha3: "ara"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Aragonese",
                     official: "aragonés",
                     alpha1: .an,
@@ -83,7 +97,7 @@ public class Languages {
                     alpha2B: "arg",
                     alpha3: "arg"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Armenian",
                     official: "Հայերեն",
                     alpha1: .hy,
@@ -92,7 +106,7 @@ public class Languages {
                     alpha2B: "arm",
                     alpha3: "hye"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Assamese",
                     official: "অসমীয়া",
                     alpha1: .as,
@@ -101,7 +115,7 @@ public class Languages {
                     alpha2B: "asm",
                     alpha3: "asm"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Avaric",
                     official: "авар мацӀ",
                     alpha1: .av,
@@ -110,7 +124,7 @@ public class Languages {
                     alpha2B: "ava",
                     alpha3: "ava"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Avestan",
                     official: "avesta",
                     alpha1: .ae,
@@ -119,7 +133,7 @@ public class Languages {
                     alpha2B: "ave",
                     alpha3: "ave"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Aymara",
                     official: "aymar aru",
                     alpha1: .ay,
@@ -128,7 +142,7 @@ public class Languages {
                     alpha2B: "aym",
                     alpha3: "aym"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Azerbaijani",
                     official: "azərbaycan dili",
                     alpha1: .az,
@@ -137,7 +151,7 @@ public class Languages {
                     alpha2B: "aze",
                     alpha3: "aze"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Bambara",
                     official: "bamanankan",
                     alpha1: .bm,
@@ -146,7 +160,7 @@ public class Languages {
                     alpha2B: "bam",
                     alpha3: "bam"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Bashkir",
                     official: "башҡорт теле",
                     alpha1: .ba,
@@ -155,7 +169,7 @@ public class Languages {
                     alpha2B: "bak",
                     alpha3: "bak"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Basque",
                     official: "euskara",
                     alpha1: .eu,
@@ -164,7 +178,7 @@ public class Languages {
                     alpha2B: "baq",
                     alpha3: "eus"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Belarusian",
                     official: "беларуская мова",
                     alpha1: .be,
@@ -173,7 +187,7 @@ public class Languages {
                     alpha2B: "bel",
                     alpha3: "bel"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Bengali",
                     official: "বাংলা",
                     alpha1: .bn,
@@ -182,7 +196,7 @@ public class Languages {
                     alpha2B: "ben",
                     alpha3: "ben"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Bihari",
                     official: "भोजपुरी",
                     alpha1: .bh,
@@ -191,7 +205,7 @@ public class Languages {
                     alpha2B: "bih",
                     alpha3: "bih"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Bislama",
                     official: "Bislama",
                     alpha1: .bi,
@@ -200,7 +214,7 @@ public class Languages {
                     alpha2B: "bis",
                     alpha3: "bis"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Bosnian",
                     official: "bosanski jezik",
                     alpha1: .bs,
@@ -210,7 +224,7 @@ public class Languages {
                     alpha3: "bos",
                     alphabet: .bosnian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Breton",
                     official: "brezhoneg",
                     alpha1: .br,
@@ -219,7 +233,7 @@ public class Languages {
                     alpha2B: "bre",
                     alpha3: "bre"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Bulgarian",
                     official: "български език",
                     alpha1: .bg,
@@ -228,7 +242,7 @@ public class Languages {
                     alpha2B: "bul",
                     alpha3: "bul"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Burmese",
                     official: "ဗမာစာ",
                     alpha1: .my,
@@ -237,7 +251,7 @@ public class Languages {
                     alpha2B: "bur",
                     alpha3: "mya"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Catalan",
                     official: "català",
                     alpha1: .ca,
@@ -247,7 +261,7 @@ public class Languages {
                     alpha3: "cat",
                     alphabet: .catalan
                 ),
-                LanguageInfo(
+                Language(
                     name: "Chamorro",
                     official: "Chamoru",
                     alpha1: .ch,
@@ -256,7 +270,7 @@ public class Languages {
                     alpha2B: "cha",
                     alpha3: "cha"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Chechen",
                     official: "нохчийн мотт",
                     alpha1: .ce,
@@ -265,7 +279,7 @@ public class Languages {
                     alpha2B: "che",
                     alpha3: "che"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Chichewa",
                     official: "chiCheŵa",
                     alpha1: .ny,
@@ -274,7 +288,7 @@ public class Languages {
                     alpha2B: "nya",
                     alpha3: "nya"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Chinese",
                     official: "中文",
                     alpha1: .zh,
@@ -283,7 +297,7 @@ public class Languages {
                     alpha2B: "chi",
                     alpha3: "zho"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Chuvash",
                     official: "чӑваш чӗлхи",
                     alpha1: .cv,
@@ -292,7 +306,7 @@ public class Languages {
                     alpha2B: "chv",
                     alpha3: "chv"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Cornish",
                     official: "Kernewek",
                     alpha1: .kw,
@@ -301,7 +315,7 @@ public class Languages {
                     alpha2B: "cor",
                     alpha3: "cor"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Corsican",
                     official: "corsu",
                     alpha1: .co,
@@ -310,7 +324,7 @@ public class Languages {
                     alpha2B: "cos",
                     alpha3: "cos"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Cree",
                     official: "ᓀᐦᐃᔭᐍᐏᐣ",
                     alpha1: .cr,
@@ -319,7 +333,7 @@ public class Languages {
                     alpha2B: "cre",
                     alpha3: "cre"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Croatian",
                     official: "hrvatski jezik",
                     alpha1: .hr,
@@ -329,7 +343,7 @@ public class Languages {
                     alpha3: "hrv",
                     alphabet: .croatian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Czech",
                     official: "čeština",
                     alpha1: .cs,
@@ -339,7 +353,7 @@ public class Languages {
                     alpha3: "ces",
                     alphabet: .czech
                 ),
-                LanguageInfo(
+                Language(
                     name: "Danish",
                     official: "dansk",
                     alpha1: .da,
@@ -349,7 +363,7 @@ public class Languages {
                     alpha3: "dan",
                     alphabet: .danish
                 ),
-                LanguageInfo(
+                Language(
                     name: "Divehi",
                     official: "Divehi",
                     alpha1: .iv,
@@ -358,7 +372,7 @@ public class Languages {
                     alpha2B: "div",
                     alpha3: "div"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Dutch",
                     official: "Nederlands",
                     alpha1: .nl,
@@ -368,7 +382,7 @@ public class Languages {
                     alpha3: "nld",
                     alphabet: .dutch
                 ),
-                LanguageInfo(
+                Language(
                     name: "Dzongkha",
                     official: "རྫོང་ཁ",
                     alpha1: .dz,
@@ -377,7 +391,7 @@ public class Languages {
                     alpha2B: "dzo",
                     alpha3: "dzo"
                 ),
-                LanguageInfo(
+                Language(
                     name: "English",
                     official: "English",
                     alpha1: .en,
@@ -387,7 +401,7 @@ public class Languages {
                     alpha3: "eng",
                     alphabet: .latin
                 ),
-                LanguageInfo(
+                Language(
                     name: "Esperanto",
                     official: "Esperanto",
                     alpha1: .eo,
@@ -397,7 +411,7 @@ public class Languages {
                     alpha3: "epo",
                     alphabet: .esperanto
                 ),
-                LanguageInfo(
+                Language(
                     name: "Estonian",
                     official: "eesti",
                     alpha1: .et,
@@ -407,7 +421,7 @@ public class Languages {
                     alpha3: "est",
                     alphabet: .estonian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Ewe",
                     official: "Eʋegbe",
                     alpha1: .ee,
@@ -416,7 +430,7 @@ public class Languages {
                     alpha2B: "ewe",
                     alpha3: "ewe"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Faroese",
                     official: "føroyskt",
                     alpha1: .fo,
@@ -425,7 +439,7 @@ public class Languages {
                     alpha2B: "fao",
                     alpha3: "fao"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Fijian",
                     official: "vosa Vakaviti",
                     alpha1: .fj,
@@ -434,7 +448,7 @@ public class Languages {
                     alpha2B: "fij",
                     alpha3: "fij"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Finnish",
                     official: "suomi",
                     alpha1: .fi,
@@ -444,7 +458,7 @@ public class Languages {
                     alpha3: "fin",
                     alphabet: .finnish
                 ),
-                LanguageInfo(
+                Language(
                     name: "French",
                     official: "français",
                     alpha1: .fr,
@@ -454,7 +468,7 @@ public class Languages {
                     alpha3: "fra",
                     alphabet: .french
                 ),
-                LanguageInfo(
+                Language(
                     name: "Fula",
                     official: "Fulfulde",
                     alpha1: .ff,
@@ -463,7 +477,7 @@ public class Languages {
                     alpha2B: "ful",
                     alpha3: "ful"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Galician",
                     official: "galego",
                     alpha1: .gl,
@@ -472,7 +486,7 @@ public class Languages {
                     alpha2B: "glg",
                     alpha3: "glg"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Georgian",
                     official: "ქართული",
                     alpha1: .ka,
@@ -481,7 +495,7 @@ public class Languages {
                     alpha2B: "geo",
                     alpha3: "kat"
                 ),
-                LanguageInfo(
+                Language(
                     name: "German",
                     official: "Deutsch",
                     alpha1: .de,
@@ -491,7 +505,7 @@ public class Languages {
                     alpha3: "deu",
                     alphabet: .german
                 ),
-                LanguageInfo(
+                Language(
                     name: "Greek",
                     official: "ελληνικά",
                     alpha1: .el,
@@ -500,7 +514,7 @@ public class Languages {
                     alpha2B: "gre",
                     alpha3: "ell"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Guaraní",
                     official: "Avañe'ẽ",
                     alpha1: .gn,
@@ -510,7 +524,7 @@ public class Languages {
                     alpha3: "grn",
                     alphabet: .guarani
                 ),
-                LanguageInfo(
+                Language(
                     name: "Gujarati",
                     official: "ગુજરાતી",
                     alpha1: .gu,
@@ -519,7 +533,7 @@ public class Languages {
                     alpha2B: "guj",
                     alpha3: "guj"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Haitian",
                     official: "Kreyòl ayisyen",
                     alpha1: .ht,
@@ -528,7 +542,7 @@ public class Languages {
                     alpha2B: "hat",
                     alpha3: "hat"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Hausa",
                     official: "هَوُسَ",
                     alpha1: .ha,
@@ -537,7 +551,7 @@ public class Languages {
                     alpha2B: "hau",
                     alpha3: "hau"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Hebrew",
                     official: "עברית",
                     alpha1: .he,
@@ -546,7 +560,7 @@ public class Languages {
                     alpha2B: "heb",
                     alpha3: "heb"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Herero",
                     official: "Otjiherero",
                     alpha1: .hz,
@@ -555,7 +569,7 @@ public class Languages {
                     alpha2B: "her",
                     alpha3: "her"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Hindi",
                     official: "हिन्दी",
                     alpha1: .hi,
@@ -564,7 +578,7 @@ public class Languages {
                     alpha2B: "hin",
                     alpha3: "hin"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Hiri Motu",
                     official: "Hiri Motu",
                     alpha1: .ho,
@@ -573,7 +587,7 @@ public class Languages {
                     alpha2B: "hmo",
                     alpha3: "hmo"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Hungarian",
                     official: "magyar",
                     alpha1: .hu,
@@ -583,7 +597,7 @@ public class Languages {
                     alpha3: "hun",
                     alphabet: .hungarian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Interlingua",
                     official: "Interlingua",
                     alpha1: .ia,
@@ -592,7 +606,7 @@ public class Languages {
                     alpha2B: "ina",
                     alpha3: "ina"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Indonesian",
                     official: "Bahasa Indonesia",
                     alpha1: .id,
@@ -602,7 +616,7 @@ public class Languages {
                     alpha3: "ind",
                     alphabet: .latin
                 ),
-                LanguageInfo(
+                Language(
                     name: "Interlingue",
                     official: "Interlingue",
                     alpha1: .ie,
@@ -611,7 +625,7 @@ public class Languages {
                     alpha2B: "ile",
                     alpha3: "ile"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Irish",
                     official: "Gaeilge",
                     alpha1: .ga,
@@ -620,7 +634,7 @@ public class Languages {
                     alpha2B: "gle",
                     alpha3: "gle"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Igbo",
                     official: "Asụsụ Igbo",
                     alpha1: .ig,
@@ -629,7 +643,7 @@ public class Languages {
                     alpha2B: "ibo",
                     alpha3: "ibo"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Inupiaq",
                     official: "Iñupiaq",
                     alpha1: .ik,
@@ -638,7 +652,7 @@ public class Languages {
                     alpha2B: "ipk",
                     alpha3: "ipk"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Ido",
                     official: "Ido",
                     alpha1: .io,
@@ -647,7 +661,7 @@ public class Languages {
                     alpha2B: "ido",
                     alpha3: "ido"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Icelandic",
                     official: "Íslenska",
                     alpha1: .is,
@@ -657,7 +671,7 @@ public class Languages {
                     alpha3: "isl",
                     alphabet: .icelandic
                 ),
-                LanguageInfo(
+                Language(
                     name: "Italian",
                     official: "italiano",
                     alpha1: .it,
@@ -667,7 +681,7 @@ public class Languages {
                     alpha3: "ita",
                     alphabet: .italian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Inuktitut",
                     official: "ᐃᓄᒃᑎᑐᑦ",
                     alpha1: .iu,
@@ -676,7 +690,7 @@ public class Languages {
                     alpha2B: "iku",
                     alpha3: "iku"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Japanese",
                     official: "日本語",
                     alpha1: .ja,
@@ -685,7 +699,7 @@ public class Languages {
                     alpha2B: "jpn",
                     alpha3: "jpn"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Javanese",
                     official: "basa Jawa",
                     alpha1: .jv,
@@ -694,7 +708,7 @@ public class Languages {
                     alpha2B: "jav",
                     alpha3: "jav"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kalaallisut",
                     official: "kalaallisut",
                     alpha1: .kl,
@@ -703,7 +717,7 @@ public class Languages {
                     alpha2B: "kal",
                     alpha3: "kal"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kannada",
                     official: "ಕನ್ನಡ",
                     alpha1: .kn,
@@ -712,7 +726,7 @@ public class Languages {
                     alpha2B: "kan",
                     alpha3: "kan"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kanuri",
                     official: "Kanuri",
                     alpha1: .kr,
@@ -721,7 +735,7 @@ public class Languages {
                     alpha2B: "kau",
                     alpha3: "kau"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kashmiri",
                     official: "कश्मीरी",
                     alpha1: .ks,
@@ -730,7 +744,7 @@ public class Languages {
                     alpha2B: "kas",
                     alpha3: "kas"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kazakh",
                     official: "қазақ тілі",
                     alpha1: .kk,
@@ -739,7 +753,7 @@ public class Languages {
                     alpha2B: "kaz",
                     alpha3: "kaz"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Khmer",
                     official: "ខ្មែរ",
                     alpha1: .km,
@@ -748,7 +762,7 @@ public class Languages {
                     alpha2B: "khm",
                     alpha3: "khm"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kikuyu",
                     official: "Gĩkũyũ",
                     alpha1: .ki,
@@ -757,7 +771,7 @@ public class Languages {
                     alpha2B: "kik",
                     alpha3: "kik"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kinyarwanda",
                     official: "Ikinyarwanda",
                     alpha1: .rw,
@@ -766,7 +780,7 @@ public class Languages {
                     alpha2B: "kin",
                     alpha3: "kin"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kyrgyz",
                     official: "Кыргызча",
                     alpha1: .ky,
@@ -775,7 +789,7 @@ public class Languages {
                     alpha2B: "kir",
                     alpha3: "kir"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Komi",
                     official: "коми кыв",
                     alpha1: .kv,
@@ -784,7 +798,7 @@ public class Languages {
                     alpha2B: "kom",
                     alpha3: "kom"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kongo",
                     official: "Kikongo",
                     alpha1: .kg,
@@ -793,7 +807,7 @@ public class Languages {
                     alpha2B: "kon",
                     alpha3: "kon"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Korean",
                     official: "한국어",
                     alpha1: .ko,
@@ -802,7 +816,7 @@ public class Languages {
                     alpha2B: "kor",
                     alpha3: "kor"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kurdish",
                     official: "Kurdî",
                     alpha1: .ku,
@@ -812,7 +826,7 @@ public class Languages {
                     alpha3: "kur",
                     alphabet: .kurdish
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kwanyama",
                     official: "Kuanyama",
                     alpha1: .kj,
@@ -821,7 +835,7 @@ public class Languages {
                     alpha2B: "kua",
                     alpha3: "kua"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Latin",
                     official: "latine",
                     alpha1: .la,
@@ -831,7 +845,7 @@ public class Languages {
                     alpha3: "lat",
                     alphabet: .latin
                 ),
-                LanguageInfo(
+                Language(
                     name: "Luxembourgish",
                     official: "Lëtzebuergesch",
                     alpha1: .lb,
@@ -840,7 +854,7 @@ public class Languages {
                     alpha2B: "ltz",
                     alpha3: "ltz"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Ganda",
                     official: "Luganda",
                     alpha1: .lg,
@@ -849,7 +863,7 @@ public class Languages {
                     alpha2B: "lug",
                     alpha3: "lug"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Limburgish",
                     official: "Limburgs",
                     alpha1: .li,
@@ -858,7 +872,7 @@ public class Languages {
                     alpha2B: "lim",
                     alpha3: "lim"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Lingala",
                     official: "Lingála",
                     alpha1: .ln,
@@ -867,7 +881,7 @@ public class Languages {
                     alpha2B: "lin",
                     alpha3: "lin"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Lao",
                     official: "ພາສາລາວ",
                     alpha1: .lo,
@@ -876,7 +890,7 @@ public class Languages {
                     alpha2B: "lao",
                     alpha3: "lao"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Lithuanian",
                     official: "lietuvių kalba",
                     alpha1: .lt,
@@ -886,7 +900,7 @@ public class Languages {
                     alpha3: "lit",
                     alphabet: .lithuanian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Luba-Katanga",
                     official: "Tshiluba",
                     alpha1: .lu,
@@ -895,7 +909,7 @@ public class Languages {
                     alpha2B: "lub",
                     alpha3: "lub"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Latvian",
                     official: "latviešu valoda",
                     alpha1: .lv,
@@ -904,7 +918,7 @@ public class Languages {
                     alpha2B: "lav",
                     alpha3: "lav"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Manx",
                     official: "Gaelg",
                     alpha1: .gv,
@@ -913,7 +927,7 @@ public class Languages {
                     alpha2B: "glv",
                     alpha3: "glv"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Macedonian",
                     official: "македонски јазик",
                     alpha1: .mk,
@@ -922,7 +936,7 @@ public class Languages {
                     alpha2B: "mac",
                     alpha3: "mkd"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Malagasy",
                     official: "fiteny malagasy",
                     alpha1: .mg,
@@ -931,7 +945,7 @@ public class Languages {
                     alpha2B: "mlg",
                     alpha3: "mlg"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Malay",
                     official: "bahasa Melayu",
                     alpha1: .ms,
@@ -941,7 +955,7 @@ public class Languages {
                     alpha3: "msa",
                     alphabet: .latin
                 ),
-                LanguageInfo(
+                Language(
                     name: "Malayalam",
                     official: "മലയാളം",
                     alpha1: .ml,
@@ -950,7 +964,7 @@ public class Languages {
                     alpha2B: "mal",
                     alpha3: "mal"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Maltese",
                     official: "Malti",
                     alpha1: .mt,
@@ -959,7 +973,7 @@ public class Languages {
                     alpha2B: "mlt",
                     alpha3: "mlt"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Māori",
                     official: "te reo Māori",
                     alpha1: .mi,
@@ -968,7 +982,7 @@ public class Languages {
                     alpha2B: "mao",
                     alpha3: "mri"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Marathi",
                     official: "मराठी",
                     alpha1: .mr,
@@ -977,7 +991,7 @@ public class Languages {
                     alpha2B: "mar",
                     alpha3: "mar"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Marshallese",
                     official: "Kajin M̧ajeļ",
                     alpha1: .mh,
@@ -986,7 +1000,7 @@ public class Languages {
                     alpha2B: "mah",
                     alpha3: "mah"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Mongolian",
                     official: "монгол",
                     alpha1: .mn,
@@ -995,7 +1009,7 @@ public class Languages {
                     alpha2B: "mon",
                     alpha3: "mon"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Nauru",
                     official: "Ekakairũ Naoero",
                     alpha1: .na,
@@ -1004,7 +1018,7 @@ public class Languages {
                     alpha2B: "nau",
                     alpha3: "nau"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Navajo",
                     official: "Diné bizaad",
                     alpha1: .nv,
@@ -1014,7 +1028,7 @@ public class Languages {
                     alpha3: "nav",
                     alphabet: .navajo
                 ),
-                LanguageInfo(
+                Language(
                     name: "Northern Ndebele",
                     official: "isiNdebele",
                     alpha1: .nd,
@@ -1023,7 +1037,7 @@ public class Languages {
                     alpha2B: "nde",
                     alpha3: "nde"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Nepali",
                     official: "नेपाली",
                     alpha1: .ne,
@@ -1032,7 +1046,7 @@ public class Languages {
                     alpha2B: "nep",
                     alpha3: "nep"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Ndonga",
                     official: "Owambo",
                     alpha1: .ng,
@@ -1041,7 +1055,7 @@ public class Languages {
                     alpha2B: "ndo",
                     alpha3: "ndo"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Norwegian Bokmål",
                     official: "Norsk bokmål",
                     alpha1: .nb,
@@ -1051,7 +1065,7 @@ public class Languages {
                     alpha3: "nob",
                     alphabet: .norwegian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Norwegian Nynorsk",
                     official: "Norsk nynorsk",
                     alpha1: .nn,
@@ -1060,7 +1074,7 @@ public class Languages {
                     alpha2B: "nno",
                     alpha3: "nno"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Norwegian",
                     official: "Norsk",
                     alpha1: .no,
@@ -1069,7 +1083,7 @@ public class Languages {
                     alpha2B: "nor",
                     alpha3: "nor"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Nuosu",
                     official: "ꆈꌠ꒿ Nuosuhxop",
                     alpha1: .ii,
@@ -1078,7 +1092,7 @@ public class Languages {
                     alpha2B: "iii",
                     alpha3: "iii"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Southern Ndebele",
                     official: "isiNdebele",
                     alpha1: .nr,
@@ -1087,7 +1101,7 @@ public class Languages {
                     alpha2B: "nbl",
                     alpha3: "nbl"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Occitan",
                     official: "occitan",
                     alpha1: .oc,
@@ -1097,7 +1111,7 @@ public class Languages {
                     alpha3: "oci",
                     alphabet: .occitan
                 ),
-                LanguageInfo(
+                Language(
                     name: "Ojibwe",
                     official: "ᐊᓂᔑᓈᐯᒧᐎᓐ",
                     alpha1: .oj,
@@ -1106,7 +1120,7 @@ public class Languages {
                     alpha2B: "oji",
                     alpha3: "oji"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Old Church Slavonic",
                     official: "ѩзыкъ словѣньскъ",
                     alpha1: .cu,
@@ -1115,7 +1129,7 @@ public class Languages {
                     alpha2B: "chu",
                     alpha3: "chu"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Oromo",
                     official: "Afaan Oromoo",
                     alpha1: .om,
@@ -1124,7 +1138,7 @@ public class Languages {
                     alpha2B: "orm",
                     alpha3: "orm"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Oriya",
                     official: "ଓଡ଼ିଆ",
                     alpha1: .or,
@@ -1133,7 +1147,7 @@ public class Languages {
                     alpha2B: "ori",
                     alpha3: "ori"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Ossetian",
                     official: "ирон æвзаг",
                     alpha1: .os,
@@ -1142,7 +1156,7 @@ public class Languages {
                     alpha2B: "oss",
                     alpha3: "oss"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Panjabi",
                     official: "ਪੰਜਾਬੀ",
                     alpha1: .pa,
@@ -1151,7 +1165,7 @@ public class Languages {
                     alpha2B: "pan",
                     alpha3: "pan"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Pāli",
                     official: "पाऴि",
                     alpha1: .pi,
@@ -1160,7 +1174,7 @@ public class Languages {
                     alpha2B: "pli",
                     alpha3: "pli"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Persian",
                     official: "فارسی",
                     alpha1: .fa,
@@ -1169,7 +1183,7 @@ public class Languages {
                     alpha2B: "per",
                     alpha3: "fas"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Polish",
                     official: "język polski",
                     alpha1: .pl,
@@ -1179,7 +1193,7 @@ public class Languages {
                     alpha3: "pol",
                     alphabet: .polish
                 ),
-                LanguageInfo(
+                Language(
                     name: "Pashto",
                     official: "پښتو",
                     alpha1: .ps,
@@ -1188,7 +1202,7 @@ public class Languages {
                     alpha2B: "pus",
                     alpha3: "pus"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Portuguese",
                     official: "português",
                     alpha1: .pt,
@@ -1198,7 +1212,7 @@ public class Languages {
                     alpha3: "por",
                     alphabet: .portuguese
                 ),
-                LanguageInfo(
+                Language(
                     name: "Quechua",
                     official: "Runa Simi",
                     alpha1: .qu,
@@ -1207,7 +1221,7 @@ public class Languages {
                     alpha2B: "que",
                     alpha3: "que"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Romansh",
                     official: "rumantsch grischun",
                     alpha1: .rm,
@@ -1216,7 +1230,7 @@ public class Languages {
                     alpha2B: "roh",
                     alpha3: "roh"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Kirundi",
                     official: "Ikirundi",
                     alpha1: .rn,
@@ -1225,7 +1239,7 @@ public class Languages {
                     alpha2B: "run",
                     alpha3: "run"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Romanian",
                     official: "limba română",
                     alpha1: .ro,
@@ -1235,7 +1249,7 @@ public class Languages {
                     alpha3: "ron",
                     alphabet: .romanian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Russian",
                     official: "русский язык",
                     alpha1: .ru,
@@ -1244,7 +1258,7 @@ public class Languages {
                     alpha2B: "rus",
                     alpha3: "rus"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Sanskrit",
                     official: "संस्कृतम्",
                     alpha1: .sa,
@@ -1253,7 +1267,7 @@ public class Languages {
                     alpha2B: "san",
                     alpha3: "san"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Sardinian",
                     official: "sardu",
                     alpha1: .sc,
@@ -1262,7 +1276,7 @@ public class Languages {
                     alpha2B: "srd",
                     alpha3: "srd"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Sindhi",
                     official: "सिन्धी",
                     alpha1: .sd,
@@ -1271,7 +1285,7 @@ public class Languages {
                     alpha2B: "snd",
                     alpha3: "snd"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Northern Sami",
                     official: "Davvisámegiella",
                     alpha1: .se,
@@ -1280,7 +1294,7 @@ public class Languages {
                     alpha2B: "sme",
                     alpha3: "sme"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Samoan",
                     official: "gagana fa'a Samoa",
                     alpha1: .sm,
@@ -1289,7 +1303,7 @@ public class Languages {
                     alpha2B: "smo",
                     alpha3: "smo"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Sango",
                     official: "yângâ tî sängö",
                     alpha1: .sg,
@@ -1298,7 +1312,7 @@ public class Languages {
                     alpha2B: "sag",
                     alpha3: "sag"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Serbian",
                     official: "српски језик",
                     alpha1: .sr,
@@ -1308,7 +1322,7 @@ public class Languages {
                     alpha3: "srp",
                     alphabet: .serbian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Gaelic",
                     official: "Gàidhlig",
                     alpha1: .gd,
@@ -1317,7 +1331,7 @@ public class Languages {
                     alpha2B: "gla",
                     alpha3: "gla"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Shona",
                     official: "chiShona",
                     alpha1: .sn,
@@ -1326,7 +1340,7 @@ public class Languages {
                     alpha2B: "sna",
                     alpha3: "sna"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Sinhala",
                     official: "සිංහල",
                     alpha1: .si,
@@ -1335,7 +1349,7 @@ public class Languages {
                     alpha2B: "sin",
                     alpha3: "sin"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Slovak",
                     official: "slovenčina",
                     alpha1: .sk,
@@ -1344,7 +1358,7 @@ public class Languages {
                     alpha2B: "slo",
                     alpha3: "slk"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Slovene",
                     official: "slovenski jezik",
                     alpha1: .sl,
@@ -1354,7 +1368,7 @@ public class Languages {
                     alpha3: "slv",
                     alphabet: .slovene
                 ),
-                LanguageInfo(
+                Language(
                     name: "Somali",
                     official: "Soomaaliga",
                     alpha1: .so,
@@ -1363,7 +1377,7 @@ public class Languages {
                     alpha2B: "som",
                     alpha3: "som"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Southern Sotho",
                     official: "Sesotho",
                     alpha1: .st,
@@ -1372,7 +1386,7 @@ public class Languages {
                     alpha2B: "sot",
                     alpha3: "sot"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Spanish",
                     official: "español",
                     alpha1: .es,
@@ -1382,7 +1396,7 @@ public class Languages {
                     alpha3: "spa",
                     alphabet: .spanish
                 ),
-                LanguageInfo(
+                Language(
                     name: "Sundanese",
                     official: "Basa Sunda",
                     alpha1: .su,
@@ -1391,7 +1405,7 @@ public class Languages {
                     alpha2B: "sun",
                     alpha3: "sun"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Swahili",
                     official: "Kiswahili",
                     alpha1: .sw,
@@ -1401,7 +1415,7 @@ public class Languages {
                     alpha3: "swa",
                     alphabet: .latin
                 ),
-                LanguageInfo(
+                Language(
                     name: "Swati",
                     official: "SiSwati",
                     alpha1: .ss,
@@ -1410,7 +1424,7 @@ public class Languages {
                     alpha2B: "ssw",
                     alpha3: "ssw"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Swedish",
                     official: "Svenska",
                     alpha1: .sv,
@@ -1420,7 +1434,7 @@ public class Languages {
                     alpha3: "swe",
                     alphabet: .swedish
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tamil",
                     official: "தமிழ்",
                     alpha1: .ta,
@@ -1429,7 +1443,7 @@ public class Languages {
                     alpha2B: "tam",
                     alpha3: "tam"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Telugu",
                     official: "తెలుగు",
                     alpha1: .te,
@@ -1438,7 +1452,7 @@ public class Languages {
                     alpha2B: "tel",
                     alpha3: "tel"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tajik",
                     official: "тоҷикӣ",
                     alpha1: .tg,
@@ -1447,7 +1461,7 @@ public class Languages {
                     alpha2B: "tgk",
                     alpha3: "tgk"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Thai",
                     official: "ไทย",
                     alpha1: .th,
@@ -1456,7 +1470,7 @@ public class Languages {
                     alpha2B: "tha",
                     alpha3: "tha"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tigrinya",
                     official: "ትግርኛ",
                     alpha1: .ti,
@@ -1465,7 +1479,7 @@ public class Languages {
                     alpha2B: "tir",
                     alpha3: "tir"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tibetan Standard",
                     official: "བོད་ཡིག",
                     alpha1: .bo,
@@ -1474,7 +1488,7 @@ public class Languages {
                     alpha2B: "tib",
                     alpha3: "bod"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Turkmen",
                     official: "Türkmen",
                     alpha1: .tk,
@@ -1484,7 +1498,7 @@ public class Languages {
                     alpha3: "tuk",
                     alphabet: .turkish
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tagalog",
                     official: "Wikang Tagalog",
                     alpha1: .tl,
@@ -1493,7 +1507,7 @@ public class Languages {
                     alpha2B: "tgl",
                     alpha3: "tgl"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tswana",
                     official: "Setswana",
                     alpha1: .tn,
@@ -1502,7 +1516,7 @@ public class Languages {
                     alpha2B: "tsn",
                     alpha3: "tsn"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tonga",
                     official: "faka Tonga",
                     alpha1: .to,
@@ -1511,7 +1525,7 @@ public class Languages {
                     alpha2B: "ton",
                     alpha3: "ton"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Turkish",
                     official: "Türkçe",
                     alpha1: .tr,
@@ -1520,7 +1534,7 @@ public class Languages {
                     alpha2B: "tur",
                     alpha3: "tur"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tsonga",
                     official: "Xitsonga",
                     alpha1: .ts,
@@ -1529,7 +1543,7 @@ public class Languages {
                     alpha2B: "tso",
                     alpha3: "tso"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tatar",
                     official: "татар теле",
                     alpha1: .tt,
@@ -1538,7 +1552,7 @@ public class Languages {
                     alpha2B: "tat",
                     alpha3: "tat"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Twi",
                     official: "Twi",
                     alpha1: .tw,
@@ -1547,7 +1561,7 @@ public class Languages {
                     alpha2B: "twi",
                     alpha3: "twi"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Tahitian",
                     official: "Reo Tahiti",
                     alpha1: .ty,
@@ -1556,7 +1570,7 @@ public class Languages {
                     alpha2B: "tah",
                     alpha3: "tah"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Uyghur",
                     official: "Uyƣurqə",
                     alpha1: .ug,
@@ -1565,7 +1579,7 @@ public class Languages {
                     alpha2B: "uig",
                     alpha3: "uig"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Ukrainian",
                     official: "українська мова",
                     alpha1: .uk,
@@ -1574,7 +1588,7 @@ public class Languages {
                     alpha2B: "ukr",
                     alpha3: "ukr"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Urdu",
                     official: "اردو",
                     alpha1: .ur,
@@ -1583,7 +1597,7 @@ public class Languages {
                     alpha2B: "urd",
                     alpha3: "urd"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Uzbek",
                     official: "O‘zbek",
                     alpha1: .uz,
@@ -1592,7 +1606,7 @@ public class Languages {
                     alpha2B: "uzb",
                     alpha3: "uzb"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Venda",
                     official: "Tshivenḓa",
                     alpha1: .ve,
@@ -1601,7 +1615,7 @@ public class Languages {
                     alpha2B: "ven",
                     alpha3: "ven"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Vietnamese",
                     official: "Tiếng Việt",
                     alpha1: .vi,
@@ -1611,7 +1625,7 @@ public class Languages {
                     alpha3: "vie",
                     alphabet: .vietnamese
                 ),
-                LanguageInfo(
+                Language(
                     name: "Volapük",
                     official: "Volapük",
                     alpha1: .vo,
@@ -1620,7 +1634,7 @@ public class Languages {
                     alpha2B: "vol",
                     alpha3: "vol"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Walloon",
                     official: "walon",
                     alpha1: .wa,
@@ -1629,7 +1643,7 @@ public class Languages {
                     alpha2B: "wln",
                     alpha3: "wln"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Welsh",
                     official: "Cymraeg",
                     alpha1: .cy,
@@ -1639,7 +1653,7 @@ public class Languages {
                     alpha3: "cym",
                     alphabet: .welsh
                 ),
-                LanguageInfo(
+                Language(
                     name: "Wolof",
                     official: "Wollof",
                     alpha1: .wo,
@@ -1648,7 +1662,7 @@ public class Languages {
                     alpha2B: "wol",
                     alpha3: "wol"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Western Frisian",
                     official: "Frysk",
                     alpha1: .fy,
@@ -1658,7 +1672,7 @@ public class Languages {
                     alpha3: "fry",
                     alphabet: .westFrisian
                 ),
-                LanguageInfo(
+                Language(
                     name: "Xhosa",
                     official: "isiXhosa",
                     alpha1: .xh,
@@ -1667,7 +1681,7 @@ public class Languages {
                     alpha2B: "xho",
                     alpha3: "xho"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Yiddish",
                     official: "ייִדיש",
                     alpha1: .yi,
@@ -1676,7 +1690,7 @@ public class Languages {
                     alpha2B: "yid",
                     alpha3: "yid"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Yoruba",
                     official: "Yorùbá",
                     alpha1: .yo,
@@ -1685,7 +1699,7 @@ public class Languages {
                     alpha2B: "yor",
                     alpha3: "yor"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Zhuang",
                     official: "Saɯ cueŋƅ",
                     alpha1: .za,
@@ -1694,7 +1708,7 @@ public class Languages {
                     alpha2B: "zha",
                     alpha3: "zha"
                 ),
-                LanguageInfo(
+                Language(
                     name: "Zulu",
                     official: "isiZulu",
                     alpha1: .zu,
