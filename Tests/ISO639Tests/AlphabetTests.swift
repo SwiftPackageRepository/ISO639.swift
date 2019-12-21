@@ -17,7 +17,7 @@ final class AlphabetTests: XCTestCase {
     }
 }
 
-extension String {
+extension Array where Element == Character {
     var isSequenceUnique: Bool {
         var hash = [Character:Int]()
         self.forEach { hash[$0] = 1 }
