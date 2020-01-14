@@ -55,7 +55,22 @@ public enum Alphabet: CaseIterable {
     // Vietnamese languages
     case vietnamese
     case middleVietnamese
-
+    //  languages
+    case sundanese
+    case basque
+    // arabic languages
+    case arabic
+    case malay
+    case jawi
+    case sorani
+    case panjabi
+    case punjabi
+    case pashto
+    case sindhi
+    case urdu
+    case persian
+    case farsi
+  
     var characters: [Character] {
         switch self {
             case .latin:
@@ -140,6 +155,23 @@ public enum Alphabet: CaseIterable {
                 return [ "Đ", "À", "Ả", "Ã", "Á", "Ạ", "Ă", "Ằ", "Ẳ", "Ẵ", "Ắ", "Ặ", "Â", "Ầ", "Ẩ", "Ẫ", "Ấ", "Ậ", "È", "Ẻ", "Ẽ", "É", "Ẹ", "Ê", "Ề", "Ể", "Ễ", "Ế", "Ệ", "Ì", "Ỉ", "Ĩ", "Í", "Ị", "Ò", "Ỏ", "Õ", "Ó", "Ọ", "Ô", "Ồ", "Ổ", "Ỗ", "Ố", "Ộ", "Ơ", "Ờ", "Ở", "Ỡ", "Ớ", "Ợ", "Ù", "Ủ", "Ũ", "Ú", "Ụ", "Ư", "Ừ", "Ử", "Ữ", "Ứ", "Ự", "Ỳ", "Ỷ", "Ỹ", "Ý", "Ỵ", "đ", "à", "ả", "ã", "á", "ạ", "ă", "ằ", "ẳ", "ẵ", "ắ", "ặ", "â", "ầ", "ẩ", "ẫ", "ấ", "ậ", "è", "ẻ", "ẽ", "é", "ẹ", "ê", "ề", "ể", "ễ", "ế", "ệ", "ì", "ỉ", "ĩ", "í", "ị", "ò", "ỏ", "õ", "ó", "ọ", "ồ", "ổ", "ỗ", "ố", "ơ", "ờ", "ở", "ỡ", "ớ", "ợ", "ù", "ủ", "ũ", "ú", "ụ", "ư", "ừ", "ử", "ữ", "ứ", "ự", "ỳ", "ỷ", "ỹ", "ý", "ỵ" ] + Alphabet.latin.characters
             case .middleVietnamese:
                 return [ "ꞗ", "ĕ", "ŏ", "ŭ", "ơ᷄", "u᷄" ] + Alphabet.vietnamese.characters
-        }
-    }
+            case .sundanese:
+                return [ "é" ] + Alphabet.latin.characters
+            case .basque:
+                return [ "ñ" ] + Alphabet.latin.characters
+            case .arabic,
+                 .malay,
+                 .jawi,
+                 .sorani,
+                 .panjabi,
+                 .punjabi,
+                 .pashto,
+                 .sindhi,
+                 .urdu:
+                return ["ا", "ب", "ت", "ث", "ج", "ح", "خ", "د", "ذ", "ر", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ع", "غ", "ف", "ق", "ك", "ل", "م", "ن", "ه", "و", "ي"]
+            case .persian,
+                 .farsi:
+                return ["گ", "ژ", "چ", "پ"] + Alphabet.arabic.characters
+         }
+     }
 }

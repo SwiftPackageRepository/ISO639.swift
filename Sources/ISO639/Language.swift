@@ -86,7 +86,8 @@ public extension Language {
                     alpha2: .ara,
                     alpha2T: "ara",
                     alpha2B: "ara",
-                    alpha3: "ara"
+                    alpha3: "ara",
+                    alphabet: .arabic
                 ),
                 Language(
                     name: "Aragonese",
@@ -916,7 +917,8 @@ public extension Language {
                     alpha2: .lav,
                     alpha2T: "lav",
                     alpha2B: "lav",
-                    alpha3: "lav"
+                    alpha3: "lav",
+                    alphabet: .latvian
                 ),
                 Language(
                     name: "Manx",
@@ -1163,7 +1165,8 @@ public extension Language {
                     alpha2: .pan,
                     alpha2T: "pan",
                     alpha2B: "pan",
-                    alpha3: "pan"
+                    alpha3: "pan",
+                    alphabet: .panjabi
                 ),
                 Language(
                     name: "Pāli",
@@ -1181,7 +1184,8 @@ public extension Language {
                     alpha2: .fas,
                     alpha2T: "fas",
                     alpha2B: "per",
-                    alpha3: "fas"
+                    alpha3: "fas",
+                    alphabet: .persian
                 ),
                 Language(
                     name: "Polish",
@@ -1200,7 +1204,8 @@ public extension Language {
                     alpha2: .pus,
                     alpha2T: "pus",
                     alpha2B: "pus",
-                    alpha3: "pus"
+                    alpha3: "pus",
+                    alphabet: .pashto
                 ),
                 Language(
                     name: "Portuguese",
@@ -1356,7 +1361,8 @@ public extension Language {
                     alpha2: .slk,
                     alpha2T: "slk",
                     alpha2B: "slo",
-                    alpha3: "slk"
+                    alpha3: "slk",
+                    alphabet: .slovak
                 ),
                 Language(
                     name: "Slovene",
@@ -1532,7 +1538,8 @@ public extension Language {
                     alpha2: .tur,
                     alpha2T: "tur",
                     alpha2B: "tur",
-                    alpha3: "tur"
+                    alpha3: "tur",
+                    alphabet: .turkish
                 ),
                 Language(
                     name: "Tsonga",
@@ -1595,7 +1602,8 @@ public extension Language {
                     alpha2: .urd,
                     alpha2T: "urd",
                     alpha2B: "urd",
-                    alpha3: "urd"
+                    alpha3: "urd",
+                    alphabet: .urdu
                 ),
                 Language(
                     name: "Uzbek",
