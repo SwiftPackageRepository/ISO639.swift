@@ -5,7 +5,7 @@
 //  Created by smuellner on 02.11.19.
 //
 
-public enum ISO639Alpha1: CaseIterable {
+public enum ISO639Alpha1: String, CaseIterable {
     case ab // Abkhaz
     case aa // Afar
     case af // Afrikaans

@@ -4,7 +4,7 @@
 //
 //  Created by smuellner on 02.11.19.
 //
-public enum Alphabet: CaseIterable {
+public enum Alphabet: String, CaseIterable {
     case latin
     case dutch
     case afrikaans
