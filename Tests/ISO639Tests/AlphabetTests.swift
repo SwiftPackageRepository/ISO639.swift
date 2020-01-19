@@ -15,6 +15,14 @@ final class AlphabetTests: XCTestCase {
             XCTAssertTrue(characters.isSequenceUnique, "Alphabet \(alphabet) has duplicate characters!")
         }
     }
+    
+    func testRandomCharactersAreUnique() {
+        for alphabet in Alphabet.allCases {
+            let characters = alphabet.randomCharacters(count: 5)
+            XCTAssertTrue((characters.count == 5), "Expected amount '5' of random characters \(characters) for \(alphabet) is wrong!")
+            XCTAssertTrue(characters.isSequenceUnique, "Random characters \(characters) for \(alphabet) contain duplicates!")
+        }
+    }
 }
 
 extension Array where Element == Character {

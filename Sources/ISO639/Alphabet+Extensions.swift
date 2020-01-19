@@ -8,5 +8,7 @@
 import Foundation
 
 extension Alphabet {
-    
+    func randomCharacters(count :Int) -> [Character] {
+        return Array(self.characters.shuffled().prefix(count))
+    }
 }

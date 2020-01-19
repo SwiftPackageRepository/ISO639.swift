@@ -22,4 +22,11 @@ extension Language {
             return alpha2 == preferredLocalization
         }
     }
+    
+    func randomCharactersFromAlphabet(count :Int) -> [Character] {
+        guard let alphabet = self.alphabet else {
+            return []
+        }
+        return alphabet.randomCharacters(count: count)
+    }
 }
