@@ -9,24 +9,26 @@ import Foundation
 
 extension Language {
     public static var preferredLanguage: Language? {
-        let preferredLocalization = Bundle.main.preferredLocalizations.first
         return Language.all.first { (language) -> Bool in
-            let alpha2 = language.alpha2.rawValue
-            return alpha2 == preferredLocalization
+            let alpha = [language.alpha1.rawValue, language.alpha2.rawValue]
+            let bestMatchedLanguage = Bundle.preferredLocalizations(from: alpha)
+            return bestMatchedLanguage.count > 0
         }
     }
 
     public static var preferredLanguages: Array<Language> {
         return Language.all.filter { (language) -> Bool in
-            let alpha2 = language.alpha2.rawValue
-            return Bundle.main.preferredLocalizations.contains(alpha2)
+            let alpha = [language.alpha1.rawValue, language.alpha2.rawValue]
+            let bestMatchedLanguage = Bundle.preferredLocalizations(from: alpha)
+            return bestMatchedLanguage.count > 0
         }
     }
 
     public static var unknownLanguages: Array<Language> {
         return Language.all.filter { (language) -> Bool in
-            let alpha2 = language.alpha2.rawValue
-            return !Bundle.main.preferredLocalizations.contains(alpha2)
+            let alpha = [language.alpha1.rawValue, language.alpha2.rawValue]
+            let bestMatchedLanguage = Bundle.preferredLocalizations(from: alpha)
+            return bestMatchedLanguage.count == 0
         }
     }
     
