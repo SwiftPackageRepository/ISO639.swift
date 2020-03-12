@@ -8,14 +8,14 @@
 // MARK: Language
 
 public struct Language {
-    var name: String // language name in english
-    var official: String // official language name
-    var alpha1: ISO639Alpha1
-    var alpha2: ISO639Alpha2
-    var alpha2T: String
-    var alpha2B: String
-    var alpha3: String
-    var alphabet: Alphabet?
+    public var name: String // language name in english
+    public var official: String // official language name
+    public var alpha1: ISO639Alpha1
+    public var alpha2: ISO639Alpha2
+    public var alpha2T: String
+    public var alpha2B: String
+    public var alpha3: String
+    public var alphabet: Alphabet?
 }
 
 // MARK: ISO639 Official Languages
