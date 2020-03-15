@@ -38,7 +38,7 @@ final class LanguageTests: XCTestCase {
     }
 
     func preferredLanguageTestWithAlpha1(_ currentLanguageCode: String) throws {
-        LocaleHelper.currentLanguageCodeAsAlpha1 = currentLanguageCode
+        LocaleHelper.currentLanguageCode = currentLanguageCode
         let alpha1 = Language.preferredLanguage!.alpha1.rawValue
         XCTAssertTrue(alpha1.lowercased() == currentLanguageCode.lowercased(), "Iso639Alpha1 key: \(currentLanguageCode) does not exist!")
     }
@@ -48,7 +48,7 @@ final class LanguageTests: XCTestCase {
     }
 
     func preferredLanguagesTestWithAlpha1(_ userPreferredLanguages: [String]) throws {
-        LocaleHelper.preferredLanguagesAsAlpha1 = userPreferredLanguages
+        LocaleHelper.preferredLanguageCodes = userPreferredLanguages
         let preferredLanguages = Language.preferredLanguages
         if !preferredLanguages.elementsEqual(userPreferredLanguages, by:
             { $0.alpha1.rawValue.lowercased() == $1.lowercased() }) {
@@ -61,7 +61,7 @@ final class LanguageTests: XCTestCase {
     }
 
     func otherLanguagesTestWithAlpha1(_ userPreferredLanguages: [String]) throws {
-        LocaleHelper.preferredLanguagesAsAlpha1 = userPreferredLanguages
+        LocaleHelper.preferredLanguageCodes = userPreferredLanguages
         let otherLanguages = Language.otherLanguages
         for otherLanguage in otherLanguages {
             if userPreferredLanguages.contains(where: { (userPreferredLanguage) -> Bool in

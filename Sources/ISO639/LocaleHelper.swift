@@ -8,6 +8,6 @@
 import Foundation
 
 internal struct LocaleHelper {
-    public static var currentLanguageCodeAsAlpha1: String? = Locale.current.languageCode
-    public static var preferredLanguagesAsAlpha1: [String] = Locale.preferredLanguages
+    public static var currentLanguageCode: String? = Locale.current.languageCode?.cutLanguageCode()
+    public static var preferredLanguageCodes: [String] = Locale.preferredLanguages.map { $0.cutLanguageCode() }
 }

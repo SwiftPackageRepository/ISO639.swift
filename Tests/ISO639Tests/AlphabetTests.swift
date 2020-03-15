@@ -23,6 +23,18 @@ final class AlphabetTests: XCTestCase {
             XCTAssertTrue(characters.isSequenceUnique, "Random characters \(characters) for \(alphabet) contain duplicates!")
         }
     }
+
+    func testRandomCharactersDoNotContainExcludes() {
+        let excludesCount = 5
+        for alphabet in Alphabet.allCases {
+            let excludes = alphabet.randomCharacters(count: excludesCount)
+            let count = alphabet.characters.count - excludesCount
+            let characters = alphabet.randomCharacters(count: count, excludes: excludes)
+            XCTAssertTrue((characters.count == count), "Expected amount '\(count)' of random characters \(characters) for \(alphabet) is wrong!")
+            let totalCharacters = Set(characters).subtracting(Set(excludes)).count
+            XCTAssertTrue((totalCharacters == count), "Set '\(characters)' did contain excludes '\(excludes)'!")
+        }
+    }
 }
 
 extension Array where Element == Character {
