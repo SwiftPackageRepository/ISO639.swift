@@ -5,8 +5,6 @@
 //  Created by smuellner on 02.11.19.
 //
 
-// MARK: Language
-
 public struct Language {
     public var name: String // language name in english
     public var official: String // official language name
@@ -15,7 +13,7 @@ public struct Language {
     public var alpha2T: String
     public var alpha2B: String
     public var alpha3: String
-    public var alphabet: Alphabet?
+    public var symbols: LanguageSymbols?
 }
 
 extension Language: Equatable {

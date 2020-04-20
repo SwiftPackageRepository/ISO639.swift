@@ -4,16 +4,16 @@ ISO639 is **created and maintaned with ❥** by Sascha Muellner.
 
 ---
 
-[![Travis CI](https://travis-ci.org/smuellner/ISO639-for-swift.svg?branch=master)](https://travis-ci.org/smuellner/ISO639-for-swift)
+[![Travis CI](https://travis-ci.org/smuellner/ISO639.swift.svg?branch=master)](https://travis-ci.org/smuellner/ISO639.swift)
 [![Maintainability](https://api.codeclimate.com/v1/badges/960d3ef98a6e144689c5/maintainability)](https://codeclimate.com/github/smuellner/ISO639-for-swift/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/960d3ef98a6e144689c5/test_coverage)](https://codeclimate.com/github/smuellner/ISO639-for-swift/test_coverage)
 ![Platforms](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg)
-[![Version](https://img.shields.io/cocoapods/v/ISO639.svg?style=flat)](https://github.com/smuellner/MultiUser-for-swift/releases/latest)
-[![License](https://img.shields.io/cocoapods/l/ISO639.svg?style=flat)](https://cocoapods.org/pods/MultiUser)
+[![Version](https://img.shields.io/cocoapods/v/ISO639.svg?style=flat)](https://github.com/smuellner/ISO639.swift/releases/latest)
+[![License](https://img.shields.io/cocoapods/l/ISO639.svg?style=flat)](https://cocoapods.org/pods/ISO639)
 [![Swift Version](https://img.shields.io/badge/swift-5.1-orange.svg?style=flat)](https://developer.apple.com/swift)
 [![SPM compatible](https://img.shields.io/badge/SPM-compatible-orange.svg?style=flat)](https://github.com/apple/swift-package-manager)
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
-[![README](https://img.shields.io/badge/-README-lightgrey)](https://smuellner.github.io/ISO639-for-swift)
+[![README](https://img.shields.io/badge/-README-lightgrey)](https://smuellner.github.io/ISO639.swift)
 
 ## Requirements
 
@@ -28,7 +28,7 @@ The latest version of ISO639 requires:
 ### Swift Package Manager
 Using SPM add the following to your dependencies
 
-``` 'ISO639', 'master', 'https://github.com/smuellner/ISO639-for-swift.git' ```
+``` 'ISO639', 'master', 'https://github.com/smuellner/ISO639.swift.git' ```
 
 ### CocoaPods
 Using CocoaPods add the following to your Podfile:
