@@ -5,8 +5,8 @@ ISO639 is **created and maintaned with ❥** by Sascha Muellner.
 ---
 
 [![Travis CI](https://travis-ci.org/smuellner/ISO639.swift.svg?branch=master)](https://travis-ci.org/smuellner/ISO639.swift)
-[![Maintainability](https://api.codeclimate.com/v1/badges/960d3ef98a6e144689c5/maintainability)](https://codeclimate.com/github/smuellner/ISO639-for-swift/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/960d3ef98a6e144689c5/test_coverage)](https://codeclimate.com/github/smuellner/ISO639-for-swift/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/960d3ef98a6e144689c5/maintainability)](https://codeclimate.com/github/smuellner/ISO639.swift/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/960d3ef98a6e144689c5/test_coverage)](https://codeclimate.com/github/smuellner/ISO639.swift/test_coverage)
 ![Platforms](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg)
 [![Version](https://img.shields.io/cocoapods/v/ISO639.svg?style=flat)](https://github.com/smuellner/ISO639.swift/releases/latest)
 [![License](https://img.shields.io/cocoapods/l/ISO639.svg?style=flat)](https://cocoapods.org/pods/ISO639)
