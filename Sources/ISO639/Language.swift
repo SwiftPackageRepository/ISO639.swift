@@ -5,7 +5,10 @@
 //  Created by smuellner on 02.11.19.
 //
 
-public struct Language {
+import Foundation
+
+public struct Language: Identifiable {
+    public var id = UUID()
     public var name: String // language name in english
     public var official: String // official language name
     public var alpha1: ISO639Alpha1
