@@ -8,15 +8,15 @@ branches:
 env:
   global:
   # PACKAGE_VERSION will be used by travis to create the Github release tag
-  - PACKAGE_VERSION=0.0.1
+  - PACKAGE_VERSION=1.1.4
 jobs:
   include:
   # The first stage will run all unit tests using Ubuntu
   - stage: Test
     os:
       - osx
-    language: objective-c
-    osx_image: xcode11.2
+    language: swift
+    osx_image: xcode11.4
     install:
       - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)"
     script:
@@ -30,5 +30,5 @@ jobs:
     - git config --global user.email "builds@travis-ci.com"
     - git config --global user.name "Travis CI"
     - git tag $PACKAGE_VERSION
-   # - git push --quiet https://$GH_TOKEN@github.com/smuellner/ISO639-for-swift --tag > /dev/null 2>&1
+   # - git push --quiet https://$GH_TOKEN@github.com/smuellner/ISO639.swift --tag > /dev/null 2>&1
 

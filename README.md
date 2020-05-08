@@ -33,7 +33,7 @@ Using SPM add the following to your dependencies
 ### CocoaPods
 Using CocoaPods add the following to your Podfile:
 
-```pod 'ISO639', '~> 1.1.3'```
+```pod 'ISO639', '~> 1.1.4'```
 
 ### What?
 This is a **Swift** package with support for iOS/macOS/tvOS/watchOS that defines languges based on ISO639-1 and allows for a lookup depending on the [iso693](https://en.wikipedia.org/wiki/ISO_639 "iso639") language code.
