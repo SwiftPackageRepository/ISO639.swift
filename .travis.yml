@@ -20,6 +20,9 @@ jobs:
     install:
       - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)"
     script:
+      - swiftenv install --list
+      - swiftenv local 5.2
+      - swift --version
       - swift package update
       - swift build
       - swift test
