@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ISO639'
-  s.version          = '1.1.0'
+  s.version          = '1.1.3'
   s.summary          = 'Defining languages based on ISO639-1.'
   s.homepage         = 'https://github.com/smuellner/ISO639.swift'
   s.license          = { type: 'Apache', file: 'LICENSE' }

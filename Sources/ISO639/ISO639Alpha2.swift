@@ -190,4 +190,14 @@ public enum ISO639Alpha2: String, CaseIterable {
     case yor // Yoruba
     case zha // Zhuang
     case zul // Zulu
+    
+    public static func build(rawValue: String?) -> ISO639Alpha2? {
+        guard let languageCode = rawValue else {
+            return nil
+        }
+        if languageCode.count != 3 {
+            return nil
+        }
+        return ISO639Alpha2(rawValue: languageCode.lowercased())
+    }
 }
