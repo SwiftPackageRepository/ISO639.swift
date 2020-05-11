@@ -42,14 +42,14 @@ public extension Array where Element == Language {
     
     func from(with locale: Locale) -> Language? {
         guard let languageCode = locale.languageCode?.lowercased() else { return nil }
-        return Language.all.first(where: { (language) -> Bool in
+        return self.first(where: { (language) -> Bool in
             languageCode == language.alpha1.rawValue ||
             languageCode == language.alpha2.rawValue
         })
     }
     
     func from(with alpha1Code: String) -> Language? {
-        return Language.all.first(where: { (language) -> Bool in
+        return self.first(where: { (language) -> Bool in
             alpha1Code.lowercased() == language.alpha1.rawValue
         })
     }
@@ -61,7 +61,7 @@ public extension Array where Element == Language {
     }
     
     func from(with alpha1Code: ISO639Alpha1) -> Language? {
-        return Language.all.first(where: { (language) -> Bool in
+        return self.first(where: { (language) -> Bool in
             alpha1Code == language.alpha1
         })
     }
@@ -73,7 +73,7 @@ public extension Array where Element == Language {
     }
     
     func from(with alpha2Code: ISO639Alpha2) -> Language? {
-        return Language.all.first(where: { (language) -> Bool in
+        return self.first(where: { (language) -> Bool in
             alpha2Code == language.alpha2
         })
     }
