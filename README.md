@@ -3,8 +3,7 @@
 ISO639 is **created and maintaned with ❥** by Sascha Muellner.
 
 ---
-
-[![Travis CI](https://travis-ci.org/smuellner/ISO639.swift.svg?branch=master)](https://travis-ci.org/smuellner/ISO639.swift)
+![Swift](https://github.com/smuellner/ISO639.swift/workflows/Swift/badge.svg?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/90b8c0a3d0d70ef5d31e/maintainability)](https://codeclimate.com/github/smuellner/ISO639.swift/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/90b8c0a3d0d70ef5d31e/test_coverage)](https://codeclimate.com/github/smuellner/ISO639.swift/test_coverage)
 ![Platforms](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg)
