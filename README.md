@@ -39,21 +39,8 @@ This is a **Swift** package with support for iOS/macOS/tvOS/watchOS that defines
 
 ### How to use?
 
-#### Language
+* [Language](Documentation/language.md) 
 
-Retrieve a list of all languages:
-
-```swift
-
-let all = Language.all
-
-print(all.first!)
-// Optional(ISO639.Language(name: "Abkhaz", official: "аҧсуа бызшәа", alpha1: ISO639.ISO639Alpha1.ab, alpha2: ISO639.ISO639Alpha2.abk, alpha2T: "abk", alpha2B: "abk", alpha3: "abk", alphabet: nil))
-
-print(all.count)
-// 184
-
-```
 
 ### Credits:
 baptistejamin: https://github.com/baptistejamin/swift-locales-code
