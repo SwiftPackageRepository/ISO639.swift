@@ -20,7 +20,7 @@ jobs:
     - name: Run tests
       run: swift test -v --enable-code-coverage
       
-    - name: Run tests
+    - name: Read codecov-path
       run: |
           export CODECOV_JSON_PATH=$(swift test --show-codecov-path)
           echo "CODECOV_JSON_PATH=$CODECOV_JSON_PATH"
