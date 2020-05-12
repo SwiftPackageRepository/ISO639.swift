@@ -25,7 +25,7 @@ jobs:
           export CODECOV_JSON_PATH=$(swift test --show-codecov-path)
           echo "CODECOV_JSON_PATH=$CODECOV_JSON_PATH"
           echo "::set-env name=CODECOV_JSON_PATH::$CODECOV_JSON_PATH"
-          perl -pi.bak -e 's#${{ GITHUB_WORKSPACE }}/##g' $CODECOV_JSON_PATH
+          perl -pi.bak -e 's#${{ env.GITHUB_WORKSPACE }}/##g' $CODECOV_JSON_PATH
           
     - name: Upload code coverage
       uses: actions/upload-artifact@v1
