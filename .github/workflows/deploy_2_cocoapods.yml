@@ -1,7 +1,10 @@
 name: Deploy to cocoapods
 
 on:
-  deployment
+  push:
+    branches: [ master ]
+    tags:
+    - '*'
 
 jobs:
   build:
