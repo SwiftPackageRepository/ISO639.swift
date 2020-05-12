@@ -24,6 +24,7 @@ jobs:
       run: |
           export CODECOV_JSON_PATH=$(swift test --show-codecov-path)
           echo "CODECOV_JSON_PATH=$CODECOV_JSON_PATH"
+          echo "GITHUB_WORKSPACE=${{ env.GITHUB_WORKSPACE }}"
           echo "::set-env name=CODECOV_JSON_PATH::$CODECOV_JSON_PATH"
           perl -pi.bak -e 's#${{ env.GITHUB_WORKSPACE }}/##g' $CODECOV_JSON_PATH
           
