@@ -12,13 +12,23 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
+      
     - name: Build
       run: swift build -v
+      
     - name: Run tests
       run: swift test -v
+      
     - name: Install Cocoapods
       run: gem install cocoapods
-    - uses: michaelhenry/deploy-to-cocoapods-github-action@1.0.9
+      
+    - name: Deploy to Cocoapod
+      run: |
+        set -eo pipefail
+        export LIB_VERSION=$(git describe --tags `git rev-list --tags --max-count=1`)
+        echo "LIB_VERSION: $LIB_VERSION"
+        pod lib lint --allow-warnings
+        pod trunk push --allow-warnings
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
