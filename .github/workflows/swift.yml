@@ -20,7 +20,14 @@ jobs:
     - name: Run tests
       run: swift test -v --enable-code-coverage
       
+    - name: Run tests
+      run: |
+          export CODECOV_JSON_PATH=$(swift test --show-codecov-path)
+          echo "CODECOV_JSON_PATH=$CODECOV_JSON_PATH"
+          echo "::set-env name=CODECOV_JSON_PATH::$CODECOV_JSON_PATH"
+      
     - name: Codecov
       uses: codecov/codecov-action@v1.0.7
       with:
+        file: ${{ env.CODECOV_JSON_PATH }}
         fail_ci_if_error: false
