@@ -15,21 +15,11 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Build
-      run: swift build -v
-      
+      run: make build
+
     - name: Run tests
-      run: swift test -v --enable-code-coverage
-      
-    - name: Read codecov-path
-      run: |
-          export CODECOV_JSON_PATH=$(swift test --show-codecov-path)
-          echo "CODECOV_JSON_PATH=$CODECOV_JSON_PATH"
-          echo "GITHUB_WORKSPACE=${GITHUB_WORKSPACE}"
-          echo "GITHUB_WORKFLOW=${GITHUB_WORKFLOW}"
-          echo "GITHUB_REF=${GITHUB_REF}"
-          echo "::set-env name=CODECOV_JSON_PATH::$CODECOV_JSON_PATH"
-          perl -pi.bak -e "s#${GITHUB_WORKSPACE}/##g" $CODECOV_JSON_PATH
-          
+      run: make test-all
+                
     - name: Upload code coverage
       uses: actions/upload-artifact@v1
       with:
@@ -37,8 +27,5 @@ jobs:
         path: ${{ env.CODECOV_JSON_PATH }}
         
     - name: Codecov
-      uses: codecov/codecov-action@v1.0.7
-      with:
-        file: ${{ env.CODECOV_JSON_PATH }}
-        fail_ci_if_error: false
+      run: make upload_to_codecov
       

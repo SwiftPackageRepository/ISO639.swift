@@ -1,0 +1,27 @@
+name: Release pod
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build
+      run: make build
+
+    - name: Run tests
+      run: make test-all
+
+    - name: Install Cocoapods
+      run: gem install cocoapods
+
+    - name: Release Pod
+       run: make release-pod
+       env:
+         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
