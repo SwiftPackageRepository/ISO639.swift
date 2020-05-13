@@ -13,6 +13,9 @@ clean:
 force-clean:
 	rm -rf .build
 
+build: version
+	swift build -v
+
 test-macos-xcode:
 	set -o pipefail && \
 	xcodebuild test \
@@ -28,11 +31,19 @@ test-macos-spm:
     	-instr-profile=$(BIN_BUILD_PATH)/codecov/default.profdata \
 		-arch=x86_64 \
     	$(BIN_BUILD_PATH)/ISO639PackageTests.xctest/Contents/MacOS/ISO639PackageTests
+	xcrun llvm-cov show \
+    	-instr-profile=$(BIN_BUILD_PATH)/codecov/default.profdata \
+		-arch=x86_64 \
+		-o $(BUILD_PATH)/CodeCoverageReport \
+		--format=html \
+    	$(BIN_BUILD_PATH)/ISO639PackageTests.xctest/Contents/MacOS/ISO639PackageTests
+
+show-coverage:
+	open $(BUILD_PATH)/CodeCoverageReport/index.html
 
 test-all: test-macos-spm test-macos-xcode
 
-build: version
-	swift build -v
+all: env build test-all show-coverage
 
 upload_to_codecov:
 	curl -s https://codecov.io/bash > $(BUILD_PATH)/codecov.bash

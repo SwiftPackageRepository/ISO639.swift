@@ -19,13 +19,13 @@ jobs:
 
     - name: Run tests
       run: make test-all
-                
-    - name: Upload code coverage
+
+    - name: Upload coverage to Codecov.io
+      run: make upload_to_codecov
+
+    - name: Upload coverage as artifact
       uses: actions/upload-artifact@v1
       with:
         name: ISO639-codecov
-        path: ${{ env.CODECOV_JSON_PATH }}
-        
-    - name: Codecov
-      run: make upload_to_codecov
+        path: .build/CodeCoverageReport
       
