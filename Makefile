@@ -1,11 +1,13 @@
 .PHONY: magic version
 
+export PRJ_NAME=ISO639
 export TAG=$(shell git rev-list --tags --max-count=1)
 export VERSION=$(shell git describe --tags $(TAG))
 export PRJ_PATH=$(shell pwd)
 export BUILD_PATH=$(PRJ_PATH)/.build
 export BIN_BUILD_PATH=$(shell swift build --show-bin-path)
 export CODECOV_JSON_PATH=$(shell swift test --show-codecov-path)
+export XCTEST_FILE_PATH=$(BIN_BUILD_PATH)/$(PRJ_NAME)PackageTests.xctest/Contents/MacOS/$(PRJ_NAME)PackageTests
 
 clean:
 	swift package clean
@@ -19,7 +21,7 @@ build: version
 test-macos-xcode:
 	set -o pipefail && \
 	xcodebuild test \
-		-scheme ISO639 \
+		-scheme $(PRJ_NAME) \
 		-destination platform="macOS" \
 		-parallel-testing-enabled YES \
 		-enableCodeCoverage YES \
@@ -30,13 +32,13 @@ test-macos-spm:
 	xcrun llvm-cov report \
     	-instr-profile=$(BIN_BUILD_PATH)/codecov/default.profdata \
 		-arch=x86_64 \
-    	$(BIN_BUILD_PATH)/ISO639PackageTests.xctest/Contents/MacOS/ISO639PackageTests
+    	$(XCTEST_FILE_PATH)
 	xcrun llvm-cov show \
     	-instr-profile=$(BIN_BUILD_PATH)/codecov/default.profdata \
 		-arch=x86_64 \
 		-o $(BUILD_PATH)/CodeCoverageReport \
 		--format=html \
-    	$(BIN_BUILD_PATH)/ISO639PackageTests.xctest/Contents/MacOS/ISO639PackageTests
+    	$(XCTEST_FILE_PATH)
 
 show-coverage:
 	open $(BUILD_PATH)/CodeCoverageReport/index.html
@@ -48,7 +50,7 @@ all: env build test-all show-coverage
 upload_to_codecov:
 	curl -s https://codecov.io/bash > $(BUILD_PATH)/codecov.bash
 	chmod 755 $(BUILD_PATH)/codecov.bash
-	$(BUILD_PATH)/codecov.bash -J 'ISO639' -D $(BUILD_PATH)/derivedData 
+	$(BUILD_PATH)/codecov.bash -J "$(PRJ_NAME)" -D $(BUILD_PATH)/derivedData 
 
 release-pod: version
 	pod lib lint --allow-warnings

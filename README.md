@@ -4,8 +4,7 @@ ISO639 is **created and maintaned with ❥** by Sascha Muellner.
 
 ---
 [![Swift](https://github.com/smuellner/ISO639.swift/workflows/Swift/badge.svg?branch=master)](https://github.com/smuellner/ISO639.swift/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/90b8c0a3d0d70ef5d31e/maintainability)](https://codeclimate.com/github/smuellner/ISO639.swift/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/90b8c0a3d0d70ef5d31e/test_coverage)](https://codeclimate.com/github/smuellner/ISO639.swift/test_coverage)
+[![codecov](https://codecov.io/gh/smuellner/ISO639.swift/branch/master/graph/badge.svg)](https://codecov.io/gh/smuellner/ISO639.swift)
 ![Platforms](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg)
 [![Version](https://img.shields.io/cocoapods/v/ISO639.svg?style=flat)](https://cocoapods.org/pods/ISO639)
 [![License](https://img.shields.io/cocoapods/l/ISO639.svg?style=flat)](https://github.com/smuellner/ISO639.swift/blob/master/LICENSE)
