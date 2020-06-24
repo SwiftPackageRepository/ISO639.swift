@@ -36,3 +36,33 @@ public extension Array where Element == Character {
         }
     }
 }
+
+public extension Array where Element == String {
+    func randomCharacters(count :Int) -> [String] {
+        return Array(self.shuffled().prefix(count))
+    }
+
+    func randomCharacters(count :Int, excludes :[String], letterCase :LetterCase = .mixed) -> [String] {
+        return self
+            .filter(by: letterCase)
+            .filter { !excludes.contains($0) }
+            .randomCharacters(count: count)
+    }
+
+    func randomCharacters(count :Int, exclude :String, letterCase :LetterCase = .mixed) -> [String] {
+        return self.randomCharacters(count: count,
+                                     excludes: [exclude],
+                                     letterCase: letterCase)
+    }
+
+    func filter(by letterCase :LetterCase) -> [String] {
+        switch letterCase {
+        case .lower:
+            return self.filter { $0.first?.isLowercase == true }
+        case .upper:
+            return self.filter { $0.first?.isUppercase == true }
+        default:
+            return self
+        }
+    }
+}

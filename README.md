@@ -13,6 +13,10 @@ ISO639 is **created and maintaned with ❥** by Sascha Muellner.
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 [![README](https://img.shields.io/badge/-README-lightgrey)](https://smuellner.github.io/ISO639.swift)
 
+## What?
+This is a **Swift** package with support for iOS/macOS/tvOS/watchOS that defines languages based on [ISO639](https://en.wikipedia.org/wiki/ISO_639 "iso639").
+Additional to the english name, the official name and all alpha code, also informations about language symbols (e.g. abc, азбука, ...), letter case (upper, lower, mixed) and the writing system (alphabetical, logographic and syllabic, ...) are available for each language.
+
 ## Requirements
 
 The latest version of ISO639 requires:
@@ -31,12 +35,10 @@ Using SPM add the following to your dependencies
 ### CocoaPods
 Using CocoaPods add the following to your Podfile:
 
-```pod 'ISO639', '~> 1.1.4'```
+```pod 'ISO639', '~> 1.1.6'```
 
-### What?
-This is a **Swift** package with support for iOS/macOS/tvOS/watchOS that defines languges based on ISO639-1 and allows for a lookup depending on the [iso693](https://en.wikipedia.org/wiki/ISO_639 "iso639") language code.
 
-### How to use?
+## How to use?
 
 * [Language](Documentation/language.md) 
 

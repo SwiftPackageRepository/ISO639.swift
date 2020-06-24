@@ -12,7 +12,8 @@ final class LanguageCharactersTests: XCTestCase {
     func testCharactersInAllAlphabetsAreUnique() {
         for alphabet in LanguageSymbols.allCases {
             let characters = alphabet.characters
-            XCTAssertTrue(characters.isSequenceUnique, "Alphabet \(alphabet) has duplicate characters!")
+            let isSequenceUnique = characters.isSequenceUnique
+            XCTAssertTrue(isSequenceUnique, "\nAlphabet \(alphabet) has duplicate characters!\n\n=== DUPLICATES ===\n\t\(characters.findDuplicateCharacters)!\n\n=== UNIQUE ARRAY ===\n\t\(Array(NSOrderedSet(array: characters)))")
         }
     }
     
@@ -37,10 +38,19 @@ final class LanguageCharactersTests: XCTestCase {
     }
 }
 
-extension Array where Element == Character {
+extension Array where Element == String {
     var isSequenceUnique: Bool {
-        var hash = [Character:Int]()
+        var hash = [String:Int]()
         self.forEach { hash[$0] = 1 }
         return hash.count == self.count
+    }
+
+    var findDuplicateCharacters: [String] {
+        let crossReference = Dictionary(grouping: self, by: { $0 })
+        let duplicates = crossReference
+            .filter { $1.count > 1 }
+            .sorted { $0.1.count > $1.1.count }
+            .map { (element) -> String in element.key }
+        return duplicates
     }
 }

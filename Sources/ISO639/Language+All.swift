@@ -1,13 +1,11 @@
 //
 //  Language+All.swift
-//  
+//  MARK: ISO639 Official Languages
 //
 //  Created by Sascha Müllner on 13.03.20.
 //
 
 import Foundation
-
-// MARK: ISO639 Official Languages
 
 public extension Language {
     static var all: [Language] {
@@ -94,7 +92,8 @@ public extension Language {
                     alpha2: .hye,
                     alpha2T: "hye",
                     alpha2B: "arm",
-                    alpha3: "hye"
+                    alpha3: "hye",
+                    symbols: .armenian
                 ),
                 Language(
                     name: "Assamese",
@@ -103,7 +102,8 @@ public extension Language {
                     alpha2: .asm,
                     alpha2T: "asm",
                     alpha2B: "asm",
-                    alpha3: "asm"
+                    alpha3: "asm",
+                    symbols: .assamese
                 ),
                 Language(
                     name: "Avaric",
@@ -166,7 +166,8 @@ public extension Language {
                     alpha2: .eus,
                     alpha2T: "eus",
                     alpha2B: "baq",
-                    alpha3: "eus"
+                    alpha3: "eus",
+                    symbols: .basque
                 ),
                 Language(
                     name: "Belarusian",
@@ -175,7 +176,8 @@ public extension Language {
                     alpha2: .bel,
                     alpha2T: "bel",
                     alpha2B: "bel",
-                    alpha3: "bel"
+                    alpha3: "bel",
+                    symbols: .belarusian
                 ),
                 Language(
                     name: "Bengali",
@@ -184,7 +186,8 @@ public extension Language {
                     alpha2: .ben,
                     alpha2T: "ben",
                     alpha2B: "ben",
-                    alpha3: "ben"
+                    alpha3: "ben",
+                    symbols: .bengali
                 ),
                 Language(
                     name: "Bihari",
@@ -230,7 +233,8 @@ public extension Language {
                     alpha2: .bul,
                     alpha2T: "bul",
                     alpha2B: "bul",
-                    alpha3: "bul"
+                    alpha3: "bul",
+                    symbols: .bulgarian
                 ),
                 Language(
                     name: "Burmese",
@@ -285,7 +289,8 @@ public extension Language {
                     alpha2: .zho,
                     alpha2T: "zho",
                     alpha2B: "chi",
-                    alpha3: "zho"
+                    alpha3: "zho",
+                    symbols: .chineseSimplified
                 ),
                 Language(
                     name: "Chuvash",
@@ -483,7 +488,8 @@ public extension Language {
                     alpha2: .kat,
                     alpha2T: "kat",
                     alpha2B: "geo",
-                    alpha3: "kat"
+                    alpha3: "kat",
+                    symbols: .georgian
                 ),
                 Language(
                     name: "German",
@@ -502,7 +508,8 @@ public extension Language {
                     alpha2: .ell,
                     alpha2T: "ell",
                     alpha2B: "gre",
-                    alpha3: "ell"
+                    alpha3: "ell",
+                    symbols: .greek
                 ),
                 Language(
                     name: "Guaraní",
@@ -521,7 +528,8 @@ public extension Language {
                     alpha2: .guj,
                     alpha2T: "guj",
                     alpha2B: "guj",
-                    alpha3: "guj"
+                    alpha3: "guj",
+                    symbols: .gujarati
                 ),
                 Language(
                     name: "Haitian",
@@ -548,7 +556,8 @@ public extension Language {
                     alpha2: .heb,
                     alpha2T: "heb",
                     alpha2B: "heb",
-                    alpha3: "heb"
+                    alpha3: "heb",
+                    symbols: .hebrew
                 ),
                 Language(
                     name: "Herero",
@@ -566,7 +575,8 @@ public extension Language {
                     alpha2: .hin,
                     alpha2T: "hin",
                     alpha2B: "hin",
-                    alpha3: "hin"
+                    alpha3: "hin",
+                    symbols: .hindi
                 ),
                 Language(
                     name: "Hiri Motu",
@@ -687,7 +697,8 @@ public extension Language {
                     alpha2: .jpn,
                     alpha2T: "jpn",
                     alpha2B: "jpn",
-                    alpha3: "jpn"
+                    alpha3: "jpn",
+                    symbols: .japaneseWithJojoKanji
                 ),
                 Language(
                     name: "Javanese",
@@ -750,7 +761,8 @@ public extension Language {
                     alpha2: .khm,
                     alpha2T: "khm",
                     alpha2B: "khm",
-                    alpha3: "khm"
+                    alpha3: "khm",
+                    symbols: .khmer
                 ),
                 Language(
                     name: "Kikuyu",
@@ -925,7 +937,8 @@ public extension Language {
                     alpha2: .mkd,
                     alpha2T: "mkd",
                     alpha2B: "mac",
-                    alpha3: "mkd"
+                    alpha3: "mkd",
+                    symbols: .macedonian
                 ),
                 Language(
                     name: "Malagasy",
@@ -1035,7 +1048,8 @@ public extension Language {
                     alpha2: .nep,
                     alpha2T: "nep",
                     alpha2B: "nep",
-                    alpha3: "nep"
+                    alpha3: "nep",
+                    symbols: .nepali
                 ),
                 Language(
                     name: "Ndonga",
@@ -1054,7 +1068,7 @@ public extension Language {
                     alpha2T: "nob",
                     alpha2B: "nob",
                     alpha3: "nob",
-                    symbols: .norwegian
+                    symbols: nil
                 ),
                 Language(
                     name: "Norwegian Nynorsk",
@@ -1063,7 +1077,8 @@ public extension Language {
                     alpha2: .nno,
                     alpha2T: "nno",
                     alpha2B: "nno",
-                    alpha3: "nno"
+                    alpha3: "nno",
+                    symbols: nil
                 ),
                 Language(
                     name: "Norwegian",
@@ -1072,7 +1087,8 @@ public extension Language {
                     alpha2: .nor,
                     alpha2T: "nor",
                     alpha2B: "nor",
-                    alpha3: "nor"
+                    alpha3: "nor",
+                    symbols: .norwegian
                 ),
                 Language(
                     name: "Nuosu",
@@ -1118,7 +1134,8 @@ public extension Language {
                     alpha2: .chu,
                     alpha2T: "chu",
                     alpha2B: "chu",
-                    alpha3: "chu"
+                    alpha3: "chu",
+                    symbols: .oldChurchSlavonic
                 ),
                 Language(
                     name: "Oromo",
@@ -1250,7 +1267,8 @@ public extension Language {
                     alpha2: .rus,
                     alpha2T: "rus",
                     alpha2B: "rus",
-                    alpha3: "rus"
+                    alpha3: "rus",
+                    symbols: .russian
                 ),
                 Language(
                     name: "Sanskrit",
@@ -1259,7 +1277,8 @@ public extension Language {
                     alpha2: .san,
                     alpha2T: "san",
                     alpha2B: "san",
-                    alpha3: "san"
+                    alpha3: "san",
+                    symbols: .sanskrit
                 ),
                 Language(
                     name: "Sardinian",
@@ -1277,7 +1296,8 @@ public extension Language {
                     alpha2: .snd,
                     alpha2T: "snd",
                     alpha2B: "snd",
-                    alpha3: "snd"
+                    alpha3: "snd",
+                    symbols: .sindhi
                 ),
                 Language(
                     name: "Northern Sami",
@@ -1314,7 +1334,7 @@ public extension Language {
                     alpha2T: "srp",
                     alpha2B: "srp",
                     alpha3: "srp",
-                    symbols: .serbian
+                    symbols: .serbianCyrillic
                 ),
                 Language(
                     name: "Gaelic",
@@ -1370,7 +1390,8 @@ public extension Language {
                     alpha2: .som,
                     alpha2T: "som",
                     alpha2B: "som",
-                    alpha3: "som"
+                    alpha3: "som",
+                    symbols: nil
                 ),
                 Language(
                     name: "Southern Sotho",
@@ -1481,7 +1502,8 @@ public extension Language {
                     alpha2: .bod,
                     alpha2T: "bod",
                     alpha2B: "tib",
-                    alpha3: "bod"
+                    alpha3: "bod",
+                    symbols: .tibetan
                 ),
                 Language(
                     name: "Turkmen",
@@ -1582,7 +1604,8 @@ public extension Language {
                     alpha2: .ukr,
                     alpha2T: "ukr",
                     alpha2B: "ukr",
-                    alpha3: "ukr"
+                    alpha3: "ukr",
+                    symbols: .ukrainian
                 ),
                 Language(
                     name: "Urdu",

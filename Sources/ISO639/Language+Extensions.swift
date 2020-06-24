@@ -35,7 +35,7 @@ public extension Language {
         return otherLanguages.sortByOfficial()
     }
     
-    func randomCharactersFromAlphabet(count :Int) -> [Character] {
+    func randomCharactersFromAlphabet(count :Int) -> [String] {
         guard let alphabet = self.symbols else {
             return []
         }
