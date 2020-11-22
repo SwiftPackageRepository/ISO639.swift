@@ -6,7 +6,7 @@ ISO639 is **created and maintaned with ❥** by Sascha Muellner.
 [![Swift](https://github.com/smuellner/ISO639.swift/workflows/Swift/badge.svg?branch=master)](https://github.com/smuellner/ISO639.swift/actions)
 [![codecov](https://codecov.io/gh/smuellner/ISO639.swift/branch/master/graph/badge.svg)](https://codecov.io/gh/smuellner/ISO639.swift)
 ![Platforms](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg)
-[![License](https://img.shields.io/github/license/SwiftPackageRepository/ISO639.swift)](https://github.com/SwiftPackageRepository/ISO639.swift/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/SwiftPackageRepository/ISO639.swift)](https://github.com/SwiftPackageRepository/ISO639.swift/blob/master/LICENSE)
 ![Version](https://img.shields.io/github/v/tag/SwiftPackageRepository/ISO639.swift)
 [![Swift Version](https://img.shields.io/badge/swift-5.1-orange.svg?style=flat)](https://developer.apple.com/swift)
 [![SPM compatible](https://img.shields.io/badge/SPM-compatible-orange.svg?style=flat)](https://github.com/apple/swift-package-manager)
