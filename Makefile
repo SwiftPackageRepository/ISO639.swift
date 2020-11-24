@@ -1,6 +1,6 @@
 .PHONY: magic version
 
-export PRJ_NAME=ISO639
+export PRJ_NAME=ISO639.swift
 export TAG=$(shell git rev-list --tags --max-count=1)
 export VERSION=$(shell git describe --tags $(TAG))
 export PRJ_PATH=$(shell pwd)
