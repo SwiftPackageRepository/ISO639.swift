@@ -20,8 +20,9 @@ let package = Package(
     ],
     targets: [
        .target(
-            name: "ISO639",
-            dependencies: []),
+           name: "ISO639",
+           dependencies: []
+       ),
         .testTarget(
             name: "ISO639Tests",
             dependencies: ["ISO639"]),

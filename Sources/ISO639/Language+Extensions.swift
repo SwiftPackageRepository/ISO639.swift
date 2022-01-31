@@ -45,6 +45,11 @@ public extension Language {
     }
 
     var localized: String {
-        NSLocalizedString(name, comment: "English name is used as the reference key for localisation")
+        let localized = NSLocalizedString(
+            name,
+            bundle: Bundle.module,
+            comment: "English name is used as the reference key for localisation"
+        )
+        return localized
     }
 }
