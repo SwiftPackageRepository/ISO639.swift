@@ -47,6 +47,11 @@ final class LanguageTests: XCTestCase {
         XCTAssertNoThrow(try preferredLanguagesTestWithAlpha1(["de", "en"]))
     }
 
+    func testLocalized() throws {
+        let localized = Language.from(with: .en)?.localized
+        XCTAssertNotNil(localized)
+    }
+
     func preferredLanguagesTestWithAlpha1(_ userPreferredLanguages: [String]) throws {
         LocaleHelper.preferredLanguageCodes = userPreferredLanguages
         let preferredLanguages = Language.preferredLanguages
@@ -71,4 +76,5 @@ final class LanguageTests: XCTestCase {
             }
         }
     }
+
 }

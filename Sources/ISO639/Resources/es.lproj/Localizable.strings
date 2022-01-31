@@ -1,0 +1,552 @@
+
+/* [abk]: аҧсуа бызшәа */
+"Abkhaz" = "Abkhaz";
+
+/* [aar]: Afaraf */
+"Afar" = "Afar";
+
+/* [afr]: Afrikaans */
+"Afrikaans" = "Africano";
+
+/* [aka]: Akan */
+"Akan" = "Akan";
+
+/* [sqi]: Shqip */
+"Albanian" = "Albanés";
+
+/* [amh]: አማርኛ */
+"Amharic" = "Amárico";
+
+/* [ara]: العربية */
+"Arabic" = "Árabe";
+
+/* [arg]: aragonés */
+"Aragonese" = "Aragonesa";
+
+/* [hye]: Հայերեն */
+"Armenian" = "Armenio";
+
+/* [asm]: অসমীয়া */
+"Assamese" = "Asamés";
+
+/* [ava]: авар мацӀ */
+"Avaric" = "Avaric";
+
+/* [ave]: avesta */
+"Avestan" = "Avestan";
+
+/* [aym]: aymar aru */
+"Aymara" = "Aymara";
+
+/* [aze]: azərbaycan dili */
+"Azerbaijani" = "Azerbaiyán";
+
+/* [bam]: bamanankan */
+"Bambara" = "Bambara";
+
+/* [bak]: башҡорт теле */
+"Bashkir" = "Bashkir";
+
+/* [eus]: euskara */
+"Basque" = "Vasco";
+
+/* [bel]: беларуская мова */
+"Belarusian" = "Bielorruso";
+
+/* [ben]: বাংলা */
+"Bengali" = "Bengalí";
+
+/* [bih]: भोजपुरी */
+"Bihari" = "Bihari";
+
+/* [bis]: Bislama */
+"Bislama" = "Bislama";
+
+/* [bos]: bosanski jezik */
+"Bosnian" = "Bosnia";
+
+/* [bre]: brezhoneg */
+"Breton" = "Bretón";
+
+/* [bul]: български език */
+"Bulgarian" = "Búlgaro";
+
+/* [mya]: ဗမာစာ */
+"Burmese" = "Birmano";
+
+/* [cat]: català */
+"Catalan" = "Catalán";
+
+/* [cha]: Chamoru */
+"Chamorro" = "Chamorro";
+
+/* [che]: нохчийн мотт */
+"Chechen" = "Chechenia";
+
+/* [nya]: chiCheŵa */
+"Chichewa" = "Chichewa";
+
+/* [zho]: 中文 */
+"Chinese" = "Chino";
+
+/* [chv]: чӑваш чӗлхи */
+"Chuvash" = "Chuvash";
+
+/* [cor]: Kernewek */
+"Cornish" = "Cornish";
+
+/* [cos]: corsu */
+"Corsican" = "Corso";
+
+/* [cre]: ᓀᐦᐃᔭᐍᐏᐣ */
+"Cree" = "Cree";
+
+/* [hrv]: hrvatski jezik */
+"Croatian" = "Croata";
+
+/* [ces]: čeština */
+"Czech" = "República Checa";
+
+/* [dan]: dansk */
+"Danish" = "Danés";
+
+/* [div]: Divehi */
+"Divehi" = "Divehi";
+
+/* [nld]: Nederlands */
+"Dutch" = "Holandés";
+
+/* [dzo]: རྫོང་ཁ */
+"Dzongkha" = "Dzongkha";
+
+/* [eng]: English */
+"English" = "Inglés";
+
+/* [epo]: Esperanto */
+"Esperanto" = "Esperanto";
+
+/* [est]: eesti */
+"Estonian" = "Estonio";
+
+/* [ewe]: Eʋegbe */
+"Ewe" = "Ewe";
+
+/* [fao]: føroyskt */
+"Faroese" = "Feroz";
+
+/* [fij]: vosa Vakaviti */
+"Fijian" = "Fiyi";
+
+/* [fin]: suomi */
+"Finnish" = "En finlandés";
+
+/* [fra]: français */
+"French" = "Francés";
+
+/* [ful]: Fulfulde */
+"Fula" = "Fula";
+
+/* [gla]: Gàidhlig */
+"Gaelic" = "Gaélico";
+
+/* [glg]: galego */
+"Galician" = "Galician";
+
+/* [lug]: Luganda */
+"Ganda" = "Ganda";
+
+/* [kat]: ქართული */
+"Georgian" = "Georgiano";
+
+/* [deu]: Deutsch */
+"German" = "Alemán";
+
+/* [ell]: ελληνικά */
+"Greek" = "Griego";
+
+/* [grn]: Avañe'ẽ */
+"Guaraní" = "Guaraní";
+
+/* [guj]: ગુજરાતી */
+"Gujarati" = "Gujarati";
+
+/* [hat]: Kreyòl ayisyen */
+"Haitian" = "Haití";
+
+/* [hau]: هَوُسَ */
+"Hausa" = "Hausa";
+
+/* [heb]: עברית */
+"Hebrew" = "Hebreo";
+
+/* [her]: Otjiherero */
+"Herero" = "Herero";
+
+/* [hin]: हिन्दी */
+"Hindi" = "Hindi";
+
+/* [hmo]: Hiri Motu */
+"Hiri Motu" = "Hiri Motu";
+
+/* [hun]: magyar */
+"Hungarian" = "Húngaro";
+
+/* [isl]: Íslenska */
+"Icelandic" = "Islandia";
+
+/* [ido]: Ido */
+"Ido" = "Ido";
+
+/* [ibo]: Asụsụ Igbo */
+"Igbo" = "Igbo";
+
+/* [ind]: Bahasa Indonesia */
+"Indonesian" = "Indonesia";
+
+/* [ina]: Interlingua */
+"Interlingua" = "Interlingua";
+
+/* [ile]: Interlingue */
+"Interlingue" = "Interlingue";
+
+/* [iku]: ᐃᓄᒃᑎᑐᑦ */
+"Inuktitut" = "Inuktitut";
+
+/* [ipk]: Iñupiaq */
+"Inupiaq" = "Inupiaq";
+
+/* [gle]: Gaeilge */
+"Irish" = "Irlandés";
+
+/* [ita]: italiano */
+"Italian" = "Italiano";
+
+/* [jpn]: 日本語 */
+"Japanese" = "Japonés";
+
+/* [jav]: basa Jawa */
+"Javanese" = "Javanés";
+
+/* [kal]: kalaallisut */
+"Kalaallisut" = "Kalaallisut";
+
+/* [kan]: ಕನ್ನಡ */
+"Kannada" = "Kannada";
+
+/* [kau]: Kanuri */
+"Kanuri" = "Canarias";
+
+/* [kas]: कश्मीरी */
+"Kashmiri" = "Cachemira";
+
+/* [kaz]: қазақ тілі */
+"Kazakh" = "Kazajistán";
+
+/* [khm]: ខ្មែរ */
+"Khmer" = "Khmer";
+
+/* [kik]: Gĩkũyũ */
+"Kikuyu" = "Kikuyu";
+
+/* [kin]: Ikinyarwanda */
+"Kinyarwanda" = "Kinyarwanda";
+
+/* [run]: Ikirundi */
+"Kirundi" = "Kirundi";
+
+/* [kom]: коми кыв */
+"Komi" = "Komi";
+
+/* [kon]: Kikongo */
+"Kongo" = "Kongo";
+
+/* [kor]: 한국어 */
+"Korean" = "Coreano";
+
+/* [kur]: Kurdî */
+"Kurdish" = "Kurdo";
+
+/* [kua]: Kuanyama */
+"Kwanyama" = "Kwanyama";
+
+/* [kir]: Кыргызча */
+"Kyrgyz" = "Kyrgyz";
+
+/* [lao]: ພາສາລາວ */
+"Lao" = "Lao";
+
+/* [lat]: latine */
+"Latin" = "Latín";
+
+/* [lav]: latviešu valoda */
+"Latvian" = "Letón";
+
+/* [lim]: Limburgs */
+"Limburgish" = "Limburguesa";
+
+/* [lin]: Lingála */
+"Lingala" = "Lingala";
+
+/* [lit]: lietuvių kalba */
+"Lithuanian" = "Lituania";
+
+/* [lub]: Tshiluba */
+"Luba-Katanga" = "Luba-Katanga";
+
+/* [ltz]: Lëtzebuergesch */
+"Luxembourgish" = "Luxemburgo";
+
+/* [mkd]: македонски јазик */
+"Macedonian" = "Macedonio";
+
+/* [mlg]: fiteny malagasy */
+"Malagasy" = "Malgache";
+
+/* [msa]: bahasa Melayu */
+"Malay" = "Malayo";
+
+/* [mal]: മലയാളം */
+"Malayalam" = "Malayalam";
+
+/* [mlt]: Malti */
+"Maltese" = "Maltés";
+
+/* [glv]: Gaelg */
+"Manx" = "Manx";
+
+/* [mar]: मराठी */
+"Marathi" = "Marathi";
+
+/* [mah]: Kajin M̧ajeļ */
+"Marshallese" = "Mariscala";
+
+/* [mon]: монгол */
+"Mongolian" = "Mongolia";
+
+/* [mri]: te reo Māori */
+"Māori" = "Māori";
+
+/* [nau]: Ekakairũ Naoero */
+"Nauru" = "Nauru";
+
+/* [nav]: Diné bizaad */
+"Navajo" = "Navajo";
+
+/* [ndo]: Owambo */
+"Ndonga" = "Ndonga";
+
+/* [nep]: नेपाली */
+"Nepali" = "Nepal";
+
+/* [nde]: isiNdebele */
+"Northern Ndebele" = "Ndebele del Norte";
+
+/* [sme]: Davvisámegiella */
+"Northern Sami" = "Sami del Norte";
+
+/* [nor]: Norsk */
+"Norwegian" = "Noruega";
+
+/* [nob]: Norsk bokmål */
+"Norwegian Bokmål" = "Bokmål noruego";
+
+/* [nno]: Norsk nynorsk */
+"Norwegian Nynorsk" = "Nynorsk noruego";
+
+/* [iii]: ꆈꌠ꒿ Nuosuhxop */
+"Nuosu" = "Disponible en";
+
+/* [oci]: occitan */
+"Occitan" = "Occitano";
+
+/* [oji]: ᐊᓂᔑᓈᐯᒧᐎᓐ */
+"Ojibwe" = "Ojibwe";
+
+/* [chu]: ѩзыкъ словѣньскъ */
+"Old Church Slavonic" = "Eslavo eclesiástico antiguo";
+
+/* [ori]: ଓଡ଼ିଆ */
+"Oriya" = "Oriya";
+
+/* [orm]: Afaan Oromoo */
+"Oromo" = "Oromo";
+
+/* [oss]: ирон æвзаг */
+"Ossetian" = "Osetia";
+
+/* [pan]: ਪੰਜਾਬੀ */
+"Panjabi" = "Panjabi";
+
+/* [pus]: پښتو */
+"Pashto" = "Pashto";
+
+/* [fas]: فارسی */
+"Persian" = "Persa";
+
+/* [pol]: język polski */
+"Polish" = "Polaco";
+
+/* [por]: português */
+"Portuguese" = "Portugués";
+
+/* [pli]: पाऴि */
+"Pāli" = "Pāli";
+
+/* [que]: Runa Simi */
+"Quechua" = "Quechua";
+
+/* [ron]: limba română */
+"Romanian" = "Rumano";
+
+/* [roh]: rumantsch grischun */
+"Romansh" = "Romansh";
+
+/* [rus]: русский язык */
+"Russian" = "Ruso";
+
+/* [smo]: gagana fa'a Samoa */
+"Samoan" = "Samoa";
+
+/* [sag]: yângâ tî sängö */
+"Sango" = "Sango";
+
+/* [san]: संस्कृतम् */
+"Sanskrit" = "Sánscrito";
+
+/* [srd]: sardu */
+"Sardinian" = "Cerdeña";
+
+/* [srp]: српски језик */
+"Serbian" = "Serbio";
+
+/* [sna]: chiShona */
+"Shona" = "Shona";
+
+/* [snd]: सिन्धी */
+"Sindhi" = "Sindhi";
+
+/* [sin]: සිංහල */
+"Sinhala" = "Sinhala";
+
+/* [slk]: slovenčina */
+"Slovak" = "Eslovaquia";
+
+/* [slv]: slovenski jezik */
+"Slovene" = "Esloveno";
+
+/* [som]: Soomaaliga */
+"Somali" = "Somalia";
+
+/* [nbl]: isiNdebele */
+"Southern Ndebele" = "Ndebele del Sur";
+
+/* [sot]: Sesotho */
+"Southern Sotho" = "Sotho del Sur";
+
+/* [spa]: español */
+"Spanish" = "Español";
+
+/* [sun]: Basa Sunda */
+"Sundanese" = "Sundanese";
+
+/* [swa]: Kiswahili */
+"Swahili" = "Swahili";
+
+/* [ssw]: SiSwati */
+"Swati" = "Swati";
+
+/* [swe]: Svenska */
+"Swedish" = "Sueco";
+
+/* [tgl]: Wikang Tagalog */
+"Tagalog" = "Tagalo";
+
+/* [tah]: Reo Tahiti */
+"Tahitian" = "Tahití";
+
+/* [tgk]: тоҷикӣ */
+"Tajik" = "Tajik";
+
+/* [tam]: தமிழ் */
+"Tamil" = "Tamil";
+
+/* [tat]: татар теле */
+"Tatar" = "Tártaro";
+
+/* [tel]: తెలుగు */
+"Telugu" = "Telugu";
+
+/* [tha]: ไทย */
+"Thai" = "Tailandés";
+
+/* [bod]: བོད་ཡིག */
+"Tibetan Standard" = "Estándar tibetano";
+
+/* [tir]: ትግርኛ */
+"Tigrinya" = "Tigriña";
+
+/* [ton]: faka Tonga */
+"Tonga" = "Tonga";
+
+/* [tso]: Xitsonga */
+"Tsonga" = "Tsonga";
+
+/* [tsn]: Setswana */
+"Tswana" = "Tswana";
+
+/* [tur]: Türkçe */
+"Turkish" = "Turco";
+
+/* [tuk]: Türkmen */
+"Turkmen" = "Turkmenistán";
+
+/* [twi]: Twi */
+"Twi" = "Twi";
+
+/* [ukr]: українська мова */
+"Ukrainian" = "Ucraniano";
+
+/* [urd]: اردو */
+"Urdu" = "Urdu";
+
+/* [uig]: Uyƣurqə */
+"Uyghur" = "Uyghur";
+
+/* [uzb]: O‘zbek */
+"Uzbek" = "Uzbekistán";
+
+/* [ven]: Tshivenḓa */
+"Venda" = "Venda";
+
+/* [vie]: Tiếng Việt */
+"Vietnamese" = "Vietnamita";
+
+/* [vol]: Volapük */
+"Volapük" = "Volapük";
+
+/* [wln]: walon */
+"Walloon" = "Valona";
+
+/* [cym]: Cymraeg */
+"Welsh" = "Galesa";
+
+/* [fry]: Frysk */
+"Western Frisian" = "Frisón occidental";
+
+/* [wol]: Wollof */
+"Wolof" = "Wolof";
+
+/* [xho]: isiXhosa */
+"Xhosa" = "Xhosa";
+
+/* [yid]: ייִדיש */
+"Yiddish" = "Yiddish";
+
+/* [yor]: Yorùbá */
+"Yoruba" = "Yoruba";
+
+/* [zha]: Saɯ cueŋƅ */
+"Zhuang" = "Zhuang";
+
+/* [zul]: isiZulu */
+"Zulu" = "Zulú";

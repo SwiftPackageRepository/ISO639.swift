@@ -5,6 +5,8 @@
 //  Created by smuellner on 13.01.20.
 //
 
+import Foundation
+
 public extension Language {
     static var preferredLanguage: Language? {
         return Language.all.first { (language) -> Bool in
@@ -40,5 +42,9 @@ public extension Language {
             return []
         }
         return alphabet.characters.randomCharacters(count: count)
+    }
+
+    var localized: String {
+        NSLocalizedString(name, comment: "English name is used as the reference key for localisation")
     }
 }
