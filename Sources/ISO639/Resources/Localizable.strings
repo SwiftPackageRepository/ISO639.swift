@@ -1,0 +1,552 @@
+
+/* [abk]: аҧсуа бызшәа */
+"Abkhaz" = "";
+
+/* [aar]: Afaraf */
+"Afar" = "";
+
+/* [afr]: Afrikaans */
+"Afrikaans" = "";
+
+/* [aka]: Akan */
+"Akan" = "";
+
+/* [sqi]: Shqip */
+"Albanian" = "";
+
+/* [amh]: አማርኛ */
+"Amharic" = "";
+
+/* [ara]: العربية */
+"Arabic" = "";
+
+/* [arg]: aragonés */
+"Aragonese" = "";
+
+/* [hye]: Հայերեն */
+"Armenian" = "";
+
+/* [asm]: অসমীয়া */
+"Assamese" = "";
+
+/* [ava]: авар мацӀ */
+"Avaric" = "";
+
+/* [ave]: avesta */
+"Avestan" = "";
+
+/* [aym]: aymar aru */
+"Aymara" = "";
+
+/* [aze]: azərbaycan dili */
+"Azerbaijani" = "";
+
+/* [bam]: bamanankan */
+"Bambara" = "";
+
+/* [bak]: башҡорт теле */
+"Bashkir" = "";
+
+/* [eus]: euskara */
+"Basque" = "";
+
+/* [bel]: беларуская мова */
+"Belarusian" = "";
+
+/* [ben]: বাংলা */
+"Bengali" = "";
+
+/* [bih]: भोजपुरी */
+"Bihari" = "";
+
+/* [bis]: Bislama */
+"Bislama" = "";
+
+/* [bos]: bosanski jezik */
+"Bosnian" = "";
+
+/* [bre]: brezhoneg */
+"Breton" = "";
+
+/* [bul]: български език */
+"Bulgarian" = "";
+
+/* [mya]: ဗမာစာ */
+"Burmese" = "";
+
+/* [cat]: català */
+"Catalan" = "";
+
+/* [cha]: Chamoru */
+"Chamorro" = "";
+
+/* [che]: нохчийн мотт */
+"Chechen" = "";
+
+/* [nya]: chiCheŵa */
+"Chichewa" = "";
+
+/* [zho]: 中文 */
+"Chinese" = "";
+
+/* [chv]: чӑваш чӗлхи */
+"Chuvash" = "";
+
+/* [cor]: Kernewek */
+"Cornish" = "";
+
+/* [cos]: corsu */
+"Corsican" = "";
+
+/* [cre]: ᓀᐦᐃᔭᐍᐏᐣ */
+"Cree" = "";
+
+/* [hrv]: hrvatski jezik */
+"Croatian" = "";
+
+/* [ces]: čeština */
+"Czech" = "";
+
+/* [dan]: dansk */
+"Danish" = "";
+
+/* [div]: Divehi */
+"Divehi" = "";
+
+/* [nld]: Nederlands */
+"Dutch" = "";
+
+/* [dzo]: རྫོང་ཁ */
+"Dzongkha" = "";
+
+/* [eng]: English */
+"English" = "";
+
+/* [epo]: Esperanto */
+"Esperanto" = "";
+
+/* [est]: eesti */
+"Estonian" = "";
+
+/* [ewe]: Eʋegbe */
+"Ewe" = "Ewe";
+
+/* [fao]: føroyskt */
+"Faroese" = "";
+
+/* [fij]: vosa Vakaviti */
+"Fijian" = "";
+
+/* [fin]: suomi */
+"Finnish" = "";
+
+/* [fra]: français */
+"French" = "";
+
+/* [ful]: Fulfulde */
+"Fula" = "";
+
+/* [gla]: Gàidhlig */
+"Gaelic" = "";
+
+/* [glg]: galego */
+"Galician" = "";
+
+/* [lug]: Luganda */
+"Ganda" = "";
+
+/* [kat]: ქართული */
+"Georgian" = "";
+
+/* [deu]: Deutsch */
+"German" = "";
+
+/* [ell]: ελληνικά */
+"Greek" = "";
+
+/* [grn]: Avañe'ẽ */
+"Guaraní" = "";
+
+/* [guj]: ગુજરાતી */
+"Gujarati" = "";
+
+/* [hat]: Kreyòl ayisyen */
+"Haitian" = "";
+
+/* [hau]: هَوُسَ */
+"Hausa" = "";
+
+/* [heb]: עברית */
+"Hebrew" = "";
+
+/* [her]: Otjiherero */
+"Herero" = "";
+
+/* [hin]: हिन्दी */
+"Hindi" = "";
+
+/* [hmo]: Hiri Motu */
+"Hiri Motu" = "";
+
+/* [hun]: magyar */
+"Hungarian" = "";
+
+/* [isl]: Íslenska */
+"Icelandic" = "";
+
+/* [ido]: Ido */
+"Ido" = "";
+
+/* [ibo]: Asụsụ Igbo */
+"Igbo" = "";
+
+/* [ind]: Bahasa Indonesia */
+"Indonesian" = "";
+
+/* [ina]: Interlingua */
+"Interlingua" = "";
+
+/* [ile]: Interlingue */
+"Interlingue" = "";
+
+/* [iku]: ᐃᓄᒃᑎᑐᑦ */
+"Inuktitut" = "";
+
+/* [ipk]: Iñupiaq */
+"Inupiaq" = "";
+
+/* [gle]: Gaeilge */
+"Irish" = "";
+
+/* [ita]: italiano */
+"Italian" = "";
+
+/* [jpn]: 日本語 */
+"Japanese" = "";
+
+/* [jav]: basa Jawa */
+"Javanese" = "";
+
+/* [kal]: kalaallisut */
+"Kalaallisut" = "";
+
+/* [kan]: ಕನ್ನಡ */
+"Kannada" = "";
+
+/* [kau]: Kanuri */
+"Kanuri" = "";
+
+/* [kas]: कश्मीरी */
+"Kashmiri" = "";
+
+/* [kaz]: қазақ тілі */
+"Kazakh" = "";
+
+/* [khm]: ខ្មែរ */
+"Khmer" = "";
+
+/* [kik]: Gĩkũyũ */
+"Kikuyu" = "";
+
+/* [kin]: Ikinyarwanda */
+"Kinyarwanda" = "";
+
+/* [run]: Ikirundi */
+"Kirundi" = "";
+
+/* [kom]: коми кыв */
+"Komi" = "";
+
+/* [kon]: Kikongo */
+"Kongo" = "";
+
+/* [kor]: 한국어 */
+"Korean" = "";
+
+/* [kur]: Kurdî */
+"Kurdish" = "";
+
+/* [kua]: Kuanyama */
+"Kwanyama" = "";
+
+/* [kir]: Кыргызча */
+"Kyrgyz" = "";
+
+/* [lao]: ພາສາລາວ */
+"Lao" = "";
+
+/* [lat]: latine */
+"Latin" = "";
+
+/* [lav]: latviešu valoda */
+"Latvian" = "";
+
+/* [lim]: Limburgs */
+"Limburgish" = "";
+
+/* [lin]: Lingála */
+"Lingala" = "";
+
+/* [lit]: lietuvių kalba */
+"Lithuanian" = "";
+
+/* [lub]: Tshiluba */
+"Luba-Katanga" = "";
+
+/* [ltz]: Lëtzebuergesch */
+"Luxembourgish" = "";
+
+/* [mkd]: македонски јазик */
+"Macedonian" = "";
+
+/* [mlg]: fiteny malagasy */
+"Malagasy" = "";
+
+/* [msa]: bahasa Melayu */
+"Malay" = "";
+
+/* [mal]: മലയാളം */
+"Malayalam" = "";
+
+/* [mlt]: Malti */
+"Maltese" = "";
+
+/* [glv]: Gaelg */
+"Manx" = "";
+
+/* [mar]: मराठी */
+"Marathi" = "";
+
+/* [mah]: Kajin M̧ajeļ */
+"Marshallese" = "";
+
+/* [mon]: монгол */
+"Mongolian" = "";
+
+/* [mri]: te reo Māori */
+"Māori" = "";
+
+/* [nau]: Ekakairũ Naoero */
+"Nauru" = "";
+
+/* [nav]: Diné bizaad */
+"Navajo" = "";
+
+/* [ndo]: Owambo */
+"Ndonga" = "";
+
+/* [nep]: नेपाली */
+"Nepali" = "";
+
+/* [nde]: isiNdebele */
+"Northern Ndebele" = "";
+
+/* [sme]: Davvisámegiella */
+"Northern Sami" = "";
+
+/* [nor]: Norsk */
+"Norwegian" = "";
+
+/* [nob]: Norsk bokmål */
+"Norwegian Bokmål" = "";
+
+/* [nno]: Norsk nynorsk */
+"Norwegian Nynorsk" = "";
+
+/* [iii]: ꆈꌠ꒿ Nuosuhxop */
+"Nuosu" = "";
+
+/* [oci]: occitan */
+"Occitan" = "";
+
+/* [oji]: ᐊᓂᔑᓈᐯᒧᐎᓐ */
+"Ojibwe" = "";
+
+/* [chu]: ѩзыкъ словѣньскъ */
+"Old Church Slavonic" = "";
+
+/* [ori]: ଓଡ଼ିଆ */
+"Oriya" = "";
+
+/* [orm]: Afaan Oromoo */
+"Oromo" = "";
+
+/* [oss]: ирон æвзаг */
+"Ossetian" = "";
+
+/* [pan]: ਪੰਜਾਬੀ */
+"Panjabi" = "";
+
+/* [pus]: پښتو */
+"Pashto" = "";
+
+/* [fas]: فارسی */
+"Persian" = "";
+
+/* [pol]: język polski */
+"Polish" = "";
+
+/* [por]: português */
+"Portuguese" = "";
+
+/* [pli]: पाऴि */
+"Pāli" = "";
+
+/* [que]: Runa Simi */
+"Quechua" = "";
+
+/* [ron]: limba română */
+"Romanian" = "";
+
+/* [roh]: rumantsch grischun */
+"Romansh" = "";
+
+/* [rus]: русский язык */
+"Russian" = "";
+
+/* [smo]: gagana fa'a Samoa */
+"Samoan" = "";
+
+/* [sag]: yângâ tî sängö */
+"Sango" = "";
+
+/* [san]: संस्कृतम् */
+"Sanskrit" = "";
+
+/* [srd]: sardu */
+"Sardinian" = "";
+
+/* [srp]: српски језик */
+"Serbian" = "";
+
+/* [sna]: chiShona */
+"Shona" = "";
+
+/* [snd]: सिन्धी */
+"Sindhi" = "";
+
+/* [sin]: සිංහල */
+"Sinhala" = "";
+
+/* [slk]: slovenčina */
+"Slovak" = "";
+
+/* [slv]: slovenski jezik */
+"Slovene" = "";
+
+/* [som]: Soomaaliga */
+"Somali" = "";
+
+/* [nbl]: isiNdebele */
+"Southern Ndebele" = "";
+
+/* [sot]: Sesotho */
+"Southern Sotho" = "";
+
+/* [spa]: español */
+"Spanish" = "";
+
+/* [sun]: Basa Sunda */
+"Sundanese" = "";
+
+/* [swa]: Kiswahili */
+"Swahili" = "";
+
+/* [ssw]: SiSwati */
+"Swati" = "";
+
+/* [swe]: Svenska */
+"Swedish" = "";
+
+/* [tgl]: Wikang Tagalog */
+"Tagalog" = "";
+
+/* [tah]: Reo Tahiti */
+"Tahitian" = "";
+
+/* [tgk]: тоҷикӣ */
+"Tajik" = "";
+
+/* [tam]: தமிழ் */
+"Tamil" = "";
+
+/* [tat]: татар теле */
+"Tatar" = "";
+
+/* [tel]: తెలుగు */
+"Telugu" = "";
+
+/* [tha]: ไทย */
+"Thai" = "";
+
+/* [bod]: བོད་ཡིག */
+"Tibetan Standard" = "";
+
+/* [tir]: ትግርኛ */
+"Tigrinya" = "";
+
+/* [ton]: faka Tonga */
+"Tonga" = "";
+
+/* [tso]: Xitsonga */
+"Tsonga" = "";
+
+/* [tsn]: Setswana */
+"Tswana" = "";
+
+/* [tur]: Türkçe */
+"Turkish" = "";
+
+/* [tuk]: Türkmen */
+"Turkmen" = "";
+
+/* [twi]: Twi */
+"Twi" = "";
+
+/* [ukr]: українська мова */
+"Ukrainian" = "";
+
+/* [urd]: اردو */
+"Urdu" = "";
+
+/* [uig]: Uyƣurqə */
+"Uyghur" = "";
+
+/* [uzb]: O‘zbek */
+"Uzbek" = "";
+
+/* [ven]: Tshivenḓa */
+"Venda" = "";
+
+/* [vie]: Tiếng Việt */
+"Vietnamese" = "";
+
+/* [vol]: Volapük */
+"Volapük" = "";
+
+/* [wln]: walon */
+"Walloon" = "";
+
+/* [cym]: Cymraeg */
+"Welsh" = "";
+
+/* [fry]: Frysk */
+"Western Frisian" = "";
+
+/* [wol]: Wollof */
+"Wolof" = "";
+
+/* [xho]: isiXhosa */
+"Xhosa" = "";
+
+/* [yid]: ייִדיש */
+"Yiddish" = "";
+
+/* [yor]: Yorùbá */
+"Yoruba" = "";
+
+/* [zha]: Saɯ cueŋƅ */
+"Zhuang" = "";
+
+/* [zul]: isiZulu */
+"Zulu" = "";
