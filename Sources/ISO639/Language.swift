@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Language: Identifiable {
+public struct Language: Identifiable, Sendable {
     public var id = UUID()
     public var name: String // language name in english
     public var official: String // official language name

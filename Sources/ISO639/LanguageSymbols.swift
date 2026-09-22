@@ -5,7 +5,7 @@
 //  Created by smuellner on 02.11.19.
 //
 
-public enum LanguageSymbols: String, CaseIterable {
+public enum LanguageSymbols: String, CaseIterable, Sendable {
     // MARK: Latin
     case latin
     case dutch
