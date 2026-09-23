@@ -8,6 +8,7 @@
 import XCTest
 @testable import ISO639
 
+@MainActor
 final class LanguageTests: XCTestCase {
     func testIso639Alpha1IsUniqueInLanguage() {
         var uniqueValues: [ISO639Alpha1] = []

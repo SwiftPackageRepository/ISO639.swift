@@ -8,6 +8,7 @@
 import Foundation
 
 public extension Language {
+    @MainActor
     static var preferredLanguage: Language? {
         return Language.all.first { (language) -> Bool in
             if let languageCode = LocaleHelper.currentLanguageCode?.lowercased() {
@@ -18,6 +19,7 @@ public extension Language {
         }
     }
 
+    @MainActor
     static var preferredLanguages: Array<Language> {
         let preferredLanguages = Language.all.filter { (language) -> Bool in
             return LocaleHelper.preferredLanguageCodes.contains { preferredLanguage in
@@ -31,6 +33,7 @@ public extension Language {
         return preferredLanguages.reorder(byAlpha1: LocaleHelper.preferredLanguageCodes)
     }
 
+    @MainActor
     static var otherLanguages: Array<Language> {
         let preferredLanguages = Language.preferredLanguages
         let otherLanguages = Language.all.filter { !preferredLanguages.contains($0) }

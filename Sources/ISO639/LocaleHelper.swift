@@ -7,7 +7,8 @@
 
 import Foundation
 
+@MainActor
 internal struct LocaleHelper {
-    public static var currentLanguageCode: String? = Locale.current.languageCode?.cutLanguageCode()
-    public static var preferredLanguageCodes: [String] = Locale.preferredLanguages.map { $0.cutLanguageCode() }
+    static var currentLanguageCode: String? = Locale.current.languageCode?.cutLanguageCode()
+    static var preferredLanguageCodes: [String] = Locale.preferredLanguages.map { $0.cutLanguageCode() }
 }
